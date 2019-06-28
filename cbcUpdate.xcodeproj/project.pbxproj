@@ -7,16 +7,377 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		754E5CB822C5BF8500A29A5F /* cbcUpdate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CB722C5BF8500A29A5F /* cbcUpdate.hpp */; };
-		754E5CBA22C5BF8500A29A5F /* cbcUpdatePriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CB922C5BF8500A29A5F /* cbcUpdatePriv.hpp */; };
-		754E5CBC22C5BF8500A29A5F /* cbcUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CBB22C5BF8500A29A5F /* cbcUpdate.cpp */; };
+		754E5D7422C5E6E600A29A5F /* CbcThread.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CC222C5E6CD00A29A5F /* CbcThread.hpp */; };
+		754E5D7522C5E6E600A29A5F /* CbcSOS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CC322C5E6CE00A29A5F /* CbcSOS.hpp */; };
+		754E5D7622C5E6E600A29A5F /* CbcHeuristicDive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CC422C5E6CE00A29A5F /* CbcHeuristicDive.cpp */; };
+		754E5D7822C5E6E600A29A5F /* CbcHeuristicRandRound.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CC622C5E6CE00A29A5F /* CbcHeuristicRandRound.hpp */; };
+		754E5D7922C5E6E600A29A5F /* CbcCompareEstimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CC722C5E6CE00A29A5F /* CbcCompareEstimate.cpp */; };
+		754E5D7A22C5E6E600A29A5F /* CbcTree.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CC822C5E6CE00A29A5F /* CbcTree.hpp */; };
+		754E5D7B22C5E6E600A29A5F /* CbcBranchCut.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CC922C5E6CE00A29A5F /* CbcBranchCut.hpp */; };
+		754E5D7C22C5E6E600A29A5F /* CbcCutModifier.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CCA22C5E6CE00A29A5F /* CbcCutModifier.hpp */; };
+		754E5D7D22C5E6E600A29A5F /* CbcBranchAllDifferent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CCB22C5E6CE00A29A5F /* CbcBranchAllDifferent.cpp */; };
+		754E5D7E22C5E6E600A29A5F /* CbcNodeInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CCC22C5E6CE00A29A5F /* CbcNodeInfo.cpp */; };
+		754E5D7F22C5E6E600A29A5F /* CbcHeuristicDiveCoefficient.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CCD22C5E6CE00A29A5F /* CbcHeuristicDiveCoefficient.hpp */; };
+		754E5D8022C5E6E600A29A5F /* CbcCompareActual.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CCE22C5E6CE00A29A5F /* CbcCompareActual.hpp */; };
+		754E5D8122C5E6E600A29A5F /* CbcBranchDynamic.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CCF22C5E6CF00A29A5F /* CbcBranchDynamic.hpp */; };
+		754E5D8322C5E6E600A29A5F /* CbcHeuristicDiveFractional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CD122C5E6CF00A29A5F /* CbcHeuristicDiveFractional.hpp */; };
+		754E5D8422C5E6E600A29A5F /* CbcHeuristicDW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CD222C5E6CF00A29A5F /* CbcHeuristicDW.cpp */; };
+		754E5D8522C5E6E600A29A5F /* CbcCutModifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CD322C5E6CF00A29A5F /* CbcCutModifier.cpp */; };
+		754E5D8622C5E6E600A29A5F /* CbcTreeLocal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CD422C5E6CF00A29A5F /* CbcTreeLocal.cpp */; };
+		754E5D8722C5E6E600A29A5F /* CbcHeuristicDiveVectorLength.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CD522C5E6CF00A29A5F /* CbcHeuristicDiveVectorLength.cpp */; };
+		754E5D8822C5E6E600A29A5F /* CbcFathomDynamicProgramming.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CD622C5E6CF00A29A5F /* CbcFathomDynamicProgramming.cpp */; };
+		754E5D8922C5E6E600A29A5F /* CbcMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CD722C5E6CF00A29A5F /* CbcMessage.cpp */; };
+		754E5D8A22C5E6E600A29A5F /* CbcSimpleIntegerPseudoCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CD822C5E6CF00A29A5F /* CbcSimpleIntegerPseudoCost.cpp */; };
+		754E5D8B22C5E6E600A29A5F /* CbcBranchDefaultDecision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CD922C5E6CF00A29A5F /* CbcBranchDefaultDecision.cpp */; };
+		754E5D8D22C5E6E600A29A5F /* CbcBranchCut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CDB22C5E6D000A29A5F /* CbcBranchCut.cpp */; };
+		754E5D8E22C5E6E600A29A5F /* CbcCompareObjective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CDC22C5E6D000A29A5F /* CbcCompareObjective.cpp */; };
+		754E5D9122C5E6E600A29A5F /* CbcGeneralDepth.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CDF22C5E6D000A29A5F /* CbcGeneralDepth.hpp */; };
+		754E5D9222C5E6E600A29A5F /* CbcCompareDefault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CE022C5E6D000A29A5F /* CbcCompareDefault.cpp */; };
+		754E5D9322C5E6E600A29A5F /* CbcHeuristicRENS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CE122C5E6D000A29A5F /* CbcHeuristicRENS.hpp */; };
+		754E5D9422C5E6E600A29A5F /* CbcFathomDynamicProgramming.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CE222C5E6D100A29A5F /* CbcFathomDynamicProgramming.hpp */; };
+		754E5D9522C5E6E600A29A5F /* CbcGenCtlBlk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CE322C5E6D100A29A5F /* CbcGenCtlBlk.cpp */; };
+		754E5D9622C5E6E600A29A5F /* CbcSymmetry.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CE422C5E6D100A29A5F /* CbcSymmetry.hpp */; };
+		754E5D9822C5E6E600A29A5F /* CbcFeasibilityBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CE622C5E6D100A29A5F /* CbcFeasibilityBase.hpp */; };
+		754E5D9922C5E6E600A29A5F /* CbcNode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CE722C5E6D100A29A5F /* CbcNode.hpp */; };
+		754E5D9A22C5E6E600A29A5F /* CbcNodeInfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CE822C5E6D100A29A5F /* CbcNodeInfo.hpp */; };
+		754E5D9B22C5E6E600A29A5F /* CbcPartialNodeInfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CE922C5E6D100A29A5F /* CbcPartialNodeInfo.hpp */; };
+		754E5D9D22C5E6E600A29A5F /* CbcStatistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CEB22C5E6D200A29A5F /* CbcStatistics.cpp */; };
+		754E5D9E22C5E6E600A29A5F /* CbcCountRowCut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CEC22C5E6D200A29A5F /* CbcCountRowCut.cpp */; };
+		754E5D9F22C5E6E600A29A5F /* CbcBranchDefaultDecision.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CED22C5E6D200A29A5F /* CbcBranchDefaultDecision.hpp */; };
+		754E5DA022C5E6E600A29A5F /* ClpAmplObjective.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CEE22C5E6D200A29A5F /* ClpAmplObjective.hpp */; };
+		754E5DA122C5E6E600A29A5F /* CbcBranchBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CEF22C5E6D200A29A5F /* CbcBranchBase.hpp */; };
+		754E5DA222C5E6E600A29A5F /* CbcFixVariable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CF022C5E6D200A29A5F /* CbcFixVariable.hpp */; };
+		754E5DA322C5E6E600A29A5F /* CbcSimpleIntegerDynamicPseudoCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CF122C5E6D200A29A5F /* CbcSimpleIntegerDynamicPseudoCost.cpp */; };
+		754E5DA422C5E6E600A29A5F /* CbcBranchToFixLots.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CF222C5E6D200A29A5F /* CbcBranchToFixLots.hpp */; };
+		754E5DA522C5E6E600A29A5F /* config_default.h in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CF322C5E6D300A29A5F /* config_default.h */; };
+		754E5DA622C5E6E600A29A5F /* CbcCutSubsetModifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CF422C5E6D300A29A5F /* CbcCutSubsetModifier.cpp */; };
+		754E5DA722C5E6E600A29A5F /* CbcBranchDynamic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CF522C5E6D300A29A5F /* CbcBranchDynamic.cpp */; };
+		754E5DA922C5E6E600A29A5F /* CbcCompareDefault.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CF722C5E6D300A29A5F /* CbcCompareDefault.hpp */; };
+		754E5DAA22C5E6E600A29A5F /* CbcSimpleInteger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CF822C5E6D300A29A5F /* CbcSimpleInteger.hpp */; };
+		754E5DAC22C5E6E600A29A5F /* CbcCutGenerator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CFA22C5E6D300A29A5F /* CbcCutGenerator.hpp */; };
+		754E5DAF22C5E6E600A29A5F /* CbcThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CFD22C5E6D400A29A5F /* CbcThread.cpp */; };
+		754E5DB022C5E6E600A29A5F /* CbcBranchingObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5CFE22C5E6D400A29A5F /* CbcBranchingObject.cpp */; };
+		754E5DB122C5E6E600A29A5F /* CbcHeuristicDiveGuided.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5CFF22C5E6D400A29A5F /* CbcHeuristicDiveGuided.hpp */; };
+		754E5DB222C5E6E600A29A5F /* CbcHeuristicFPump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D0022C5E6D400A29A5F /* CbcHeuristicFPump.cpp */; };
+		754E5DB322C5E6E600A29A5F /* CbcBranchingObject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D0122C5E6D400A29A5F /* CbcBranchingObject.hpp */; };
+		754E5DB522C5E6E600A29A5F /* CbcEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D0322C5E6D400A29A5F /* CbcEventHandler.cpp */; };
+		754E5DB622C5E6E600A29A5F /* CbcHeuristicRandRound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D0422C5E6D400A29A5F /* CbcHeuristicRandRound.cpp */; };
+		754E5DB722C5E6E600A29A5F /* CbcCompareEstimate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D0522C5E6D400A29A5F /* CbcCompareEstimate.hpp */; };
+		754E5DB822C5E6E600A29A5F /* CbcHeuristicVND.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D0622C5E6D400A29A5F /* CbcHeuristicVND.cpp */; };
+		754E5DB922C5E6E600A29A5F /* CbcHeuristicDiveLineSearch.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D0722C5E6D500A29A5F /* CbcHeuristicDiveLineSearch.hpp */; };
+		754E5DBA22C5E6E600A29A5F /* CbcHeuristicDINS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D0822C5E6D500A29A5F /* CbcHeuristicDINS.hpp */; };
+		754E5DBD22C5E6E600A29A5F /* CbcStrategy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D0B22C5E6D600A29A5F /* CbcStrategy.hpp */; };
+		754E5DBE22C5E6E600A29A5F /* CbcHeuristicLocal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D0C22C5E6D600A29A5F /* CbcHeuristicLocal.hpp */; };
+		754E5DBF22C5E6E600A29A5F /* CbcHeuristicPivotAndFix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D0D22C5E6D600A29A5F /* CbcHeuristicPivotAndFix.cpp */; };
+		754E5DC122C5E6E600A29A5F /* CbcBranchAllDifferent.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D0F22C5E6D600A29A5F /* CbcBranchAllDifferent.hpp */; };
+		754E5DC322C5E6E600A29A5F /* CbcHeuristicDivePseudoCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D1122C5E6D600A29A5F /* CbcHeuristicDivePseudoCost.cpp */; };
+		754E5DC522C5E6E600A29A5F /* CbcGeneral.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D1322C5E6D600A29A5F /* CbcGeneral.cpp */; };
+		754E5DC722C5E6E600A29A5F /* CbcHeuristic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D1522C5E6D700A29A5F /* CbcHeuristic.cpp */; };
+		754E5DC822C5E6E600A29A5F /* CbcSymmetry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D1622C5E6D700A29A5F /* CbcSymmetry.cpp */; };
+		754E5DC922C5E6E600A29A5F /* CbcHeuristicRINS.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D1722C5E6D700A29A5F /* CbcHeuristicRINS.hpp */; };
+		754E5DCA22C5E6E600A29A5F /* CbcObjectUpdateData.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D1822C5E6D700A29A5F /* CbcObjectUpdateData.hpp */; };
+		754E5DCB22C5E6E600A29A5F /* CbcModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D1922C5E6D700A29A5F /* CbcModel.cpp */; };
+		754E5DCD22C5E6E600A29A5F /* CbcHeuristicRENS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D1B22C5E6D700A29A5F /* CbcHeuristicRENS.cpp */; };
+		754E5DCE22C5E6E600A29A5F /* CbcBranchDecision.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D1C22C5E6D700A29A5F /* CbcBranchDecision.hpp */; };
+		754E5DD022C5E6E600A29A5F /* CbcNWay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D1E22C5E6D800A29A5F /* CbcNWay.cpp */; };
+		754E5DD122C5E6E600A29A5F /* CbcBranchToFixLots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D1F22C5E6D800A29A5F /* CbcBranchToFixLots.cpp */; };
+		754E5DD222C5E6E600A29A5F /* CbcBranchDecision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D2022C5E6D800A29A5F /* CbcBranchDecision.cpp */; };
+		754E5DD522C5E6E600A29A5F /* CbcCountRowCut.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D2322C5E6D800A29A5F /* CbcCountRowCut.hpp */; };
+		754E5DD622C5E6E600A29A5F /* CbcHeuristicDive.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D2422C5E6D800A29A5F /* CbcHeuristicDive.hpp */; };
+		754E5DD722C5E6E600A29A5F /* CbcFullNodeInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D2522C5E6D800A29A5F /* CbcFullNodeInfo.cpp */; };
+		754E5DD822C5E6E600A29A5F /* CbcFixVariable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D2622C5E6D800A29A5F /* CbcFixVariable.cpp */; };
+		754E5DD922C5E6E600A29A5F /* CbcSubProblem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D2722C5E6D800A29A5F /* CbcSubProblem.cpp */; };
+		754E5DDB22C5E6E600A29A5F /* CbcGeneralDepth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D2922C5E6D900A29A5F /* CbcGeneralDepth.cpp */; };
+		754E5DDC22C5E6E600A29A5F /* CbcBranchActual.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D2A22C5E6D900A29A5F /* CbcBranchActual.hpp */; };
+		754E5DDD22C5E6E600A29A5F /* CbcGeneral.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D2B22C5E6D900A29A5F /* CbcGeneral.hpp */; };
+		754E5DDE22C5E6E600A29A5F /* CbcNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D2C22C5E6D900A29A5F /* CbcNode.cpp */; };
+		754E5DE022C5E6E600A29A5F /* CbcHeuristicGreedy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D2E22C5E6D900A29A5F /* CbcHeuristicGreedy.cpp */; };
+		754E5DE122C5E6E600A29A5F /* CbcSimpleIntegerPseudoCost.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D2F22C5E6D900A29A5F /* CbcSimpleIntegerPseudoCost.hpp */; };
+		754E5DE322C5E6E600A29A5F /* CbcHeuristicDiveLineSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D3122C5E6DA00A29A5F /* CbcHeuristicDiveLineSearch.cpp */; };
+		754E5DE422C5E6E600A29A5F /* CbcHeuristicLocal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D3222C5E6DA00A29A5F /* CbcHeuristicLocal.cpp */; };
+		754E5DE522C5E6E600A29A5F /* CbcClique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D3322C5E6DA00A29A5F /* CbcClique.cpp */; };
+		754E5DE622C5E6E600A29A5F /* CbcHeuristicDINS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D3422C5E6DA00A29A5F /* CbcHeuristicDINS.cpp */; };
+		754E5DE722C5E6E600A29A5F /* CbcFathom.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D3522C5E6DA00A29A5F /* CbcFathom.hpp */; };
+		754E5DE822C5E6E600A29A5F /* CbcHeuristicDiveFractional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D3622C5E6DA00A29A5F /* CbcHeuristicDiveFractional.cpp */; };
+		754E5DE922C5E6E600A29A5F /* CbcHeuristicRINS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D3722C5E6DA00A29A5F /* CbcHeuristicRINS.cpp */; };
+		754E5DEB22C5E6E600A29A5F /* CbcObjectUpdateData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D3922C5E6DA00A29A5F /* CbcObjectUpdateData.cpp */; };
+		754E5DED22C5E6E600A29A5F /* CbcGenCtlBlk.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D3B22C5E6DB00A29A5F /* CbcGenCtlBlk.hpp */; };
+		754E5DEE22C5E6E600A29A5F /* CbcCompareDepth.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D3C22C5E6DB00A29A5F /* CbcCompareDepth.hpp */; };
+		754E5DEF22C5E6E600A29A5F /* CbcStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D3D22C5E6DB00A29A5F /* CbcStrategy.cpp */; };
+		754E5DF122C5E6E600A29A5F /* CbcHeuristicDivePseudoCost.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D3F22C5E6DB00A29A5F /* CbcHeuristicDivePseudoCost.hpp */; };
+		754E5DF322C5E6E600A29A5F /* CbcObject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4122C5E6DB00A29A5F /* CbcObject.hpp */; };
+		754E5DF422C5E6E600A29A5F /* CbcBranchLotsize.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4222C5E6DB00A29A5F /* CbcBranchLotsize.hpp */; };
+		754E5DF522C5E6E600A29A5F /* CbcHeuristic.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4322C5E6DB00A29A5F /* CbcHeuristic.hpp */; };
+		754E5DF622C5E6E600A29A5F /* CbcFullNodeInfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4422C5E6DC00A29A5F /* CbcFullNodeInfo.hpp */; };
+		754E5DF722C5E6E600A29A5F /* CbcTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D4522C5E6DC00A29A5F /* CbcTree.cpp */; };
+		754E5DF822C5E6E600A29A5F /* CbcStatistics.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4622C5E6DC00A29A5F /* CbcStatistics.hpp */; };
+		754E5DF922C5E6E600A29A5F /* CbcCompare.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4722C5E6DC00A29A5F /* CbcCompare.hpp */; };
+		754E5DFA22C5E6E600A29A5F /* CbcHeuristicDiveCoefficient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D4822C5E6DC00A29A5F /* CbcHeuristicDiveCoefficient.cpp */; };
+		754E5DFB22C5E6E600A29A5F /* CbcFathom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D4922C5E6DC00A29A5F /* CbcFathom.cpp */; };
+		754E5DFC22C5E6E600A29A5F /* CbcEventHandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4A22C5E6DC00A29A5F /* CbcEventHandler.hpp */; };
+		754E5DFD22C5E6E600A29A5F /* CbcClique.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4B22C5E6DC00A29A5F /* CbcClique.hpp */; };
+		754E5DFE22C5E6E600A29A5F /* CbcConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4C22C5E6DC00A29A5F /* CbcConfig.h */; };
+		754E5DFF22C5E6E600A29A5F /* CbcModel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4D22C5E6DD00A29A5F /* CbcModel.hpp */; };
+		754E5E0122C5E6E600A29A5F /* CbcNWay.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D4F22C5E6DD00A29A5F /* CbcNWay.hpp */; };
+		754E5E0222C5E6E600A29A5F /* ClpConstraintAmpl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D5022C5E6DD00A29A5F /* ClpConstraintAmpl.hpp */; };
+		754E5E0322C5E6E600A29A5F /* CbcFollowOn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D5122C5E6DD00A29A5F /* CbcFollowOn.cpp */; };
+		754E5E0422C5E6E600A29A5F /* CbcPartialNodeInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D5222C5E6DD00A29A5F /* CbcPartialNodeInfo.cpp */; };
+		754E5E0522C5E6E600A29A5F /* CbcCompareObjective.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D5322C5E6DD00A29A5F /* CbcCompareObjective.hpp */; };
+		754E5E0622C5E6E600A29A5F /* CbcFollowOn.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D5422C5E6DD00A29A5F /* CbcFollowOn.hpp */; };
+		754E5E0722C5E6E600A29A5F /* CbcHeuristicDiveVectorLength.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D5522C5E6DD00A29A5F /* CbcHeuristicDiveVectorLength.hpp */; };
+		754E5E0822C5E6E600A29A5F /* CbcHeuristicDW.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D5622C5E6DE00A29A5F /* CbcHeuristicDW.hpp */; };
+		754E5E0922C5E6E600A29A5F /* CbcCutSubsetModifier.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D5722C5E6DE00A29A5F /* CbcCutSubsetModifier.hpp */; };
+		754E5E0A22C5E6E600A29A5F /* CbcBranchLotsize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D5822C5E6DE00A29A5F /* CbcBranchLotsize.cpp */; };
+		754E5E0B22C5E6E600A29A5F /* CbcHeuristicDiveGuided.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D5922C5E6DE00A29A5F /* CbcHeuristicDiveGuided.cpp */; };
+		754E5E0E22C5E6E600A29A5F /* CbcHeuristicPivotAndFix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D5C22C5E6DE00A29A5F /* CbcHeuristicPivotAndFix.hpp */; };
+		754E5E0F22C5E6E600A29A5F /* CbcSimpleInteger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D5D22C5E6DE00A29A5F /* CbcSimpleInteger.cpp */; };
+		754E5E1022C5E6E600A29A5F /* CbcDummyBranchingObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D5E22C5E6DE00A29A5F /* CbcDummyBranchingObject.cpp */; };
+		754E5E1122C5E6E600A29A5F /* CbcHeuristicFPump.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D5F22C5E6DF00A29A5F /* CbcHeuristicFPump.hpp */; };
+		754E5E1322C5E6E600A29A5F /* CbcCutGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D6122C5E6DF00A29A5F /* CbcCutGenerator.cpp */; };
+		754E5E1422C5E6E600A29A5F /* CbcMessage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D6222C5E6DF00A29A5F /* CbcMessage.hpp */; };
+		754E5E1522C5E6E600A29A5F /* CbcTreeLocal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D6322C5E6E000A29A5F /* CbcTreeLocal.hpp */; };
+		754E5E1622C5E6E600A29A5F /* CbcObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D6422C5E6E100A29A5F /* CbcObject.cpp */; };
+		754E5E1722C5E6E600A29A5F /* config_cbc_default.h in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D6522C5E6E200A29A5F /* config_cbc_default.h */; };
+		754E5E1A22C5E6E600A29A5F /* CbcConsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D6822C5E6E200A29A5F /* CbcConsequence.cpp */; };
+		754E5E1B22C5E6E600A29A5F /* CbcDummyBranchingObject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D6922C5E6E300A29A5F /* CbcDummyBranchingObject.hpp */; };
+		754E5E1C22C5E6E600A29A5F /* CbcHeuristicVND.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D6A22C5E6E400A29A5F /* CbcHeuristicVND.hpp */; };
+		754E5E1E22C5E6E600A29A5F /* CbcCompareDepth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D6C22C5E6E400A29A5F /* CbcCompareDepth.cpp */; };
+		754E5E1F22C5E6E600A29A5F /* CbcSOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754E5D6D22C5E6E400A29A5F /* CbcSOS.cpp */; };
+		754E5E2022C5E6E600A29A5F /* CbcSubProblem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D6E22C5E6E400A29A5F /* CbcSubProblem.hpp */; };
+		754E5E2122C5E6E600A29A5F /* CbcHeuristicGreedy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D6F22C5E6E400A29A5F /* CbcHeuristicGreedy.hpp */; };
+		754E5E2222C5E6E600A29A5F /* CbcCompareBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D7022C5E6E500A29A5F /* CbcCompareBase.hpp */; };
+		754E5E2322C5E6E600A29A5F /* CbcSimpleIntegerDynamicPseudoCost.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D7122C5E6E500A29A5F /* CbcSimpleIntegerDynamicPseudoCost.hpp */; };
+		754E5E2522C5E6E600A29A5F /* CbcConsequence.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D7322C5E6E500A29A5F /* CbcConsequence.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		754E5CB422C5BF8500A29A5F /* libcbcUpdate.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcbcUpdate.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		754E5CB722C5BF8500A29A5F /* cbcUpdate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cbcUpdate.hpp; sourceTree = "<group>"; };
-		754E5CB922C5BF8500A29A5F /* cbcUpdatePriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cbcUpdatePriv.hpp; sourceTree = "<group>"; };
-		754E5CBB22C5BF8500A29A5F /* cbcUpdate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cbcUpdate.cpp; sourceTree = "<group>"; };
+		754E5CC222C5E6CD00A29A5F /* CbcThread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcThread.hpp; sourceTree = "<group>"; };
+		754E5CC322C5E6CE00A29A5F /* CbcSOS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcSOS.hpp; sourceTree = "<group>"; };
+		754E5CC422C5E6CE00A29A5F /* CbcHeuristicDive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDive.cpp; sourceTree = "<group>"; };
+		754E5CC622C5E6CE00A29A5F /* CbcHeuristicRandRound.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicRandRound.hpp; sourceTree = "<group>"; };
+		754E5CC722C5E6CE00A29A5F /* CbcCompareEstimate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcCompareEstimate.cpp; sourceTree = "<group>"; };
+		754E5CC822C5E6CE00A29A5F /* CbcTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcTree.hpp; sourceTree = "<group>"; };
+		754E5CC922C5E6CE00A29A5F /* CbcBranchCut.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchCut.hpp; sourceTree = "<group>"; };
+		754E5CCA22C5E6CE00A29A5F /* CbcCutModifier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCutModifier.hpp; sourceTree = "<group>"; };
+		754E5CCB22C5E6CE00A29A5F /* CbcBranchAllDifferent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcBranchAllDifferent.cpp; sourceTree = "<group>"; };
+		754E5CCC22C5E6CE00A29A5F /* CbcNodeInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcNodeInfo.cpp; sourceTree = "<group>"; };
+		754E5CCD22C5E6CE00A29A5F /* CbcHeuristicDiveCoefficient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDiveCoefficient.hpp; sourceTree = "<group>"; };
+		754E5CCE22C5E6CE00A29A5F /* CbcCompareActual.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCompareActual.hpp; sourceTree = "<group>"; };
+		754E5CCF22C5E6CF00A29A5F /* CbcBranchDynamic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchDynamic.hpp; sourceTree = "<group>"; };
+		754E5CD122C5E6CF00A29A5F /* CbcHeuristicDiveFractional.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDiveFractional.hpp; sourceTree = "<group>"; };
+		754E5CD222C5E6CF00A29A5F /* CbcHeuristicDW.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDW.cpp; sourceTree = "<group>"; };
+		754E5CD322C5E6CF00A29A5F /* CbcCutModifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcCutModifier.cpp; sourceTree = "<group>"; };
+		754E5CD422C5E6CF00A29A5F /* CbcTreeLocal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcTreeLocal.cpp; sourceTree = "<group>"; };
+		754E5CD522C5E6CF00A29A5F /* CbcHeuristicDiveVectorLength.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDiveVectorLength.cpp; sourceTree = "<group>"; };
+		754E5CD622C5E6CF00A29A5F /* CbcFathomDynamicProgramming.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcFathomDynamicProgramming.cpp; sourceTree = "<group>"; };
+		754E5CD722C5E6CF00A29A5F /* CbcMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcMessage.cpp; sourceTree = "<group>"; };
+		754E5CD822C5E6CF00A29A5F /* CbcSimpleIntegerPseudoCost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcSimpleIntegerPseudoCost.cpp; sourceTree = "<group>"; };
+		754E5CD922C5E6CF00A29A5F /* CbcBranchDefaultDecision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcBranchDefaultDecision.cpp; sourceTree = "<group>"; };
+		754E5CDB22C5E6D000A29A5F /* CbcBranchCut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcBranchCut.cpp; sourceTree = "<group>"; };
+		754E5CDC22C5E6D000A29A5F /* CbcCompareObjective.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcCompareObjective.cpp; sourceTree = "<group>"; };
+		754E5CDF22C5E6D000A29A5F /* CbcGeneralDepth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcGeneralDepth.hpp; sourceTree = "<group>"; };
+		754E5CE022C5E6D000A29A5F /* CbcCompareDefault.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcCompareDefault.cpp; sourceTree = "<group>"; };
+		754E5CE122C5E6D000A29A5F /* CbcHeuristicRENS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicRENS.hpp; sourceTree = "<group>"; };
+		754E5CE222C5E6D100A29A5F /* CbcFathomDynamicProgramming.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcFathomDynamicProgramming.hpp; sourceTree = "<group>"; };
+		754E5CE322C5E6D100A29A5F /* CbcGenCtlBlk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcGenCtlBlk.cpp; sourceTree = "<group>"; };
+		754E5CE422C5E6D100A29A5F /* CbcSymmetry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcSymmetry.hpp; sourceTree = "<group>"; };
+		754E5CE622C5E6D100A29A5F /* CbcFeasibilityBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcFeasibilityBase.hpp; sourceTree = "<group>"; };
+		754E5CE722C5E6D100A29A5F /* CbcNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcNode.hpp; sourceTree = "<group>"; };
+		754E5CE822C5E6D100A29A5F /* CbcNodeInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcNodeInfo.hpp; sourceTree = "<group>"; };
+		754E5CE922C5E6D100A29A5F /* CbcPartialNodeInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcPartialNodeInfo.hpp; sourceTree = "<group>"; };
+		754E5CEB22C5E6D200A29A5F /* CbcStatistics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcStatistics.cpp; sourceTree = "<group>"; };
+		754E5CEC22C5E6D200A29A5F /* CbcCountRowCut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcCountRowCut.cpp; sourceTree = "<group>"; };
+		754E5CED22C5E6D200A29A5F /* CbcBranchDefaultDecision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchDefaultDecision.hpp; sourceTree = "<group>"; };
+		754E5CEE22C5E6D200A29A5F /* ClpAmplObjective.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ClpAmplObjective.hpp; sourceTree = "<group>"; };
+		754E5CEF22C5E6D200A29A5F /* CbcBranchBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchBase.hpp; sourceTree = "<group>"; };
+		754E5CF022C5E6D200A29A5F /* CbcFixVariable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcFixVariable.hpp; sourceTree = "<group>"; };
+		754E5CF122C5E6D200A29A5F /* CbcSimpleIntegerDynamicPseudoCost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcSimpleIntegerDynamicPseudoCost.cpp; sourceTree = "<group>"; };
+		754E5CF222C5E6D200A29A5F /* CbcBranchToFixLots.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchToFixLots.hpp; sourceTree = "<group>"; };
+		754E5CF322C5E6D300A29A5F /* config_default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_default.h; sourceTree = "<group>"; };
+		754E5CF422C5E6D300A29A5F /* CbcCutSubsetModifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcCutSubsetModifier.cpp; sourceTree = "<group>"; };
+		754E5CF522C5E6D300A29A5F /* CbcBranchDynamic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcBranchDynamic.cpp; sourceTree = "<group>"; };
+		754E5CF722C5E6D300A29A5F /* CbcCompareDefault.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCompareDefault.hpp; sourceTree = "<group>"; };
+		754E5CF822C5E6D300A29A5F /* CbcSimpleInteger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcSimpleInteger.hpp; sourceTree = "<group>"; };
+		754E5CFA22C5E6D300A29A5F /* CbcCutGenerator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCutGenerator.hpp; sourceTree = "<group>"; };
+		754E5CFD22C5E6D400A29A5F /* CbcThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcThread.cpp; sourceTree = "<group>"; };
+		754E5CFE22C5E6D400A29A5F /* CbcBranchingObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcBranchingObject.cpp; sourceTree = "<group>"; };
+		754E5CFF22C5E6D400A29A5F /* CbcHeuristicDiveGuided.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDiveGuided.hpp; sourceTree = "<group>"; };
+		754E5D0022C5E6D400A29A5F /* CbcHeuristicFPump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicFPump.cpp; sourceTree = "<group>"; };
+		754E5D0122C5E6D400A29A5F /* CbcBranchingObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchingObject.hpp; sourceTree = "<group>"; };
+		754E5D0322C5E6D400A29A5F /* CbcEventHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcEventHandler.cpp; sourceTree = "<group>"; };
+		754E5D0422C5E6D400A29A5F /* CbcHeuristicRandRound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicRandRound.cpp; sourceTree = "<group>"; };
+		754E5D0522C5E6D400A29A5F /* CbcCompareEstimate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCompareEstimate.hpp; sourceTree = "<group>"; };
+		754E5D0622C5E6D400A29A5F /* CbcHeuristicVND.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicVND.cpp; sourceTree = "<group>"; };
+		754E5D0722C5E6D500A29A5F /* CbcHeuristicDiveLineSearch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDiveLineSearch.hpp; sourceTree = "<group>"; };
+		754E5D0822C5E6D500A29A5F /* CbcHeuristicDINS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDINS.hpp; sourceTree = "<group>"; };
+		754E5D0B22C5E6D600A29A5F /* CbcStrategy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcStrategy.hpp; sourceTree = "<group>"; };
+		754E5D0C22C5E6D600A29A5F /* CbcHeuristicLocal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicLocal.hpp; sourceTree = "<group>"; };
+		754E5D0D22C5E6D600A29A5F /* CbcHeuristicPivotAndFix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicPivotAndFix.cpp; sourceTree = "<group>"; };
+		754E5D0F22C5E6D600A29A5F /* CbcBranchAllDifferent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchAllDifferent.hpp; sourceTree = "<group>"; };
+		754E5D1122C5E6D600A29A5F /* CbcHeuristicDivePseudoCost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDivePseudoCost.cpp; sourceTree = "<group>"; };
+		754E5D1322C5E6D600A29A5F /* CbcGeneral.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcGeneral.cpp; sourceTree = "<group>"; };
+		754E5D1522C5E6D700A29A5F /* CbcHeuristic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristic.cpp; sourceTree = "<group>"; };
+		754E5D1622C5E6D700A29A5F /* CbcSymmetry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcSymmetry.cpp; sourceTree = "<group>"; };
+		754E5D1722C5E6D700A29A5F /* CbcHeuristicRINS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicRINS.hpp; sourceTree = "<group>"; };
+		754E5D1822C5E6D700A29A5F /* CbcObjectUpdateData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcObjectUpdateData.hpp; sourceTree = "<group>"; };
+		754E5D1922C5E6D700A29A5F /* CbcModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcModel.cpp; sourceTree = "<group>"; };
+		754E5D1B22C5E6D700A29A5F /* CbcHeuristicRENS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicRENS.cpp; sourceTree = "<group>"; };
+		754E5D1C22C5E6D700A29A5F /* CbcBranchDecision.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchDecision.hpp; sourceTree = "<group>"; };
+		754E5D1E22C5E6D800A29A5F /* CbcNWay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcNWay.cpp; sourceTree = "<group>"; };
+		754E5D1F22C5E6D800A29A5F /* CbcBranchToFixLots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcBranchToFixLots.cpp; sourceTree = "<group>"; };
+		754E5D2022C5E6D800A29A5F /* CbcBranchDecision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcBranchDecision.cpp; sourceTree = "<group>"; };
+		754E5D2322C5E6D800A29A5F /* CbcCountRowCut.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCountRowCut.hpp; sourceTree = "<group>"; };
+		754E5D2422C5E6D800A29A5F /* CbcHeuristicDive.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDive.hpp; sourceTree = "<group>"; };
+		754E5D2522C5E6D800A29A5F /* CbcFullNodeInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcFullNodeInfo.cpp; sourceTree = "<group>"; };
+		754E5D2622C5E6D800A29A5F /* CbcFixVariable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcFixVariable.cpp; sourceTree = "<group>"; };
+		754E5D2722C5E6D800A29A5F /* CbcSubProblem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcSubProblem.cpp; sourceTree = "<group>"; };
+		754E5D2922C5E6D900A29A5F /* CbcGeneralDepth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcGeneralDepth.cpp; sourceTree = "<group>"; };
+		754E5D2A22C5E6D900A29A5F /* CbcBranchActual.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchActual.hpp; sourceTree = "<group>"; };
+		754E5D2B22C5E6D900A29A5F /* CbcGeneral.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcGeneral.hpp; sourceTree = "<group>"; };
+		754E5D2C22C5E6D900A29A5F /* CbcNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcNode.cpp; sourceTree = "<group>"; };
+		754E5D2E22C5E6D900A29A5F /* CbcHeuristicGreedy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicGreedy.cpp; sourceTree = "<group>"; };
+		754E5D2F22C5E6D900A29A5F /* CbcSimpleIntegerPseudoCost.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcSimpleIntegerPseudoCost.hpp; sourceTree = "<group>"; };
+		754E5D3122C5E6DA00A29A5F /* CbcHeuristicDiveLineSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDiveLineSearch.cpp; sourceTree = "<group>"; };
+		754E5D3222C5E6DA00A29A5F /* CbcHeuristicLocal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicLocal.cpp; sourceTree = "<group>"; };
+		754E5D3322C5E6DA00A29A5F /* CbcClique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcClique.cpp; sourceTree = "<group>"; };
+		754E5D3422C5E6DA00A29A5F /* CbcHeuristicDINS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDINS.cpp; sourceTree = "<group>"; };
+		754E5D3522C5E6DA00A29A5F /* CbcFathom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcFathom.hpp; sourceTree = "<group>"; };
+		754E5D3622C5E6DA00A29A5F /* CbcHeuristicDiveFractional.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDiveFractional.cpp; sourceTree = "<group>"; };
+		754E5D3722C5E6DA00A29A5F /* CbcHeuristicRINS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicRINS.cpp; sourceTree = "<group>"; };
+		754E5D3922C5E6DA00A29A5F /* CbcObjectUpdateData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcObjectUpdateData.cpp; sourceTree = "<group>"; };
+		754E5D3B22C5E6DB00A29A5F /* CbcGenCtlBlk.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcGenCtlBlk.hpp; sourceTree = "<group>"; };
+		754E5D3C22C5E6DB00A29A5F /* CbcCompareDepth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCompareDepth.hpp; sourceTree = "<group>"; };
+		754E5D3D22C5E6DB00A29A5F /* CbcStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcStrategy.cpp; sourceTree = "<group>"; };
+		754E5D3F22C5E6DB00A29A5F /* CbcHeuristicDivePseudoCost.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDivePseudoCost.hpp; sourceTree = "<group>"; };
+		754E5D4122C5E6DB00A29A5F /* CbcObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcObject.hpp; sourceTree = "<group>"; };
+		754E5D4222C5E6DB00A29A5F /* CbcBranchLotsize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcBranchLotsize.hpp; sourceTree = "<group>"; };
+		754E5D4322C5E6DB00A29A5F /* CbcHeuristic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristic.hpp; sourceTree = "<group>"; };
+		754E5D4422C5E6DC00A29A5F /* CbcFullNodeInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcFullNodeInfo.hpp; sourceTree = "<group>"; };
+		754E5D4522C5E6DC00A29A5F /* CbcTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcTree.cpp; sourceTree = "<group>"; };
+		754E5D4622C5E6DC00A29A5F /* CbcStatistics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcStatistics.hpp; sourceTree = "<group>"; };
+		754E5D4722C5E6DC00A29A5F /* CbcCompare.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCompare.hpp; sourceTree = "<group>"; };
+		754E5D4822C5E6DC00A29A5F /* CbcHeuristicDiveCoefficient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDiveCoefficient.cpp; sourceTree = "<group>"; };
+		754E5D4922C5E6DC00A29A5F /* CbcFathom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcFathom.cpp; sourceTree = "<group>"; };
+		754E5D4A22C5E6DC00A29A5F /* CbcEventHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcEventHandler.hpp; sourceTree = "<group>"; };
+		754E5D4B22C5E6DC00A29A5F /* CbcClique.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcClique.hpp; sourceTree = "<group>"; };
+		754E5D4C22C5E6DC00A29A5F /* CbcConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CbcConfig.h; sourceTree = "<group>"; };
+		754E5D4D22C5E6DD00A29A5F /* CbcModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcModel.hpp; sourceTree = "<group>"; };
+		754E5D4F22C5E6DD00A29A5F /* CbcNWay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcNWay.hpp; sourceTree = "<group>"; };
+		754E5D5022C5E6DD00A29A5F /* ClpConstraintAmpl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ClpConstraintAmpl.hpp; sourceTree = "<group>"; };
+		754E5D5122C5E6DD00A29A5F /* CbcFollowOn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcFollowOn.cpp; sourceTree = "<group>"; };
+		754E5D5222C5E6DD00A29A5F /* CbcPartialNodeInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcPartialNodeInfo.cpp; sourceTree = "<group>"; };
+		754E5D5322C5E6DD00A29A5F /* CbcCompareObjective.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCompareObjective.hpp; sourceTree = "<group>"; };
+		754E5D5422C5E6DD00A29A5F /* CbcFollowOn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcFollowOn.hpp; sourceTree = "<group>"; };
+		754E5D5522C5E6DD00A29A5F /* CbcHeuristicDiveVectorLength.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDiveVectorLength.hpp; sourceTree = "<group>"; };
+		754E5D5622C5E6DE00A29A5F /* CbcHeuristicDW.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicDW.hpp; sourceTree = "<group>"; };
+		754E5D5722C5E6DE00A29A5F /* CbcCutSubsetModifier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCutSubsetModifier.hpp; sourceTree = "<group>"; };
+		754E5D5822C5E6DE00A29A5F /* CbcBranchLotsize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcBranchLotsize.cpp; sourceTree = "<group>"; };
+		754E5D5922C5E6DE00A29A5F /* CbcHeuristicDiveGuided.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcHeuristicDiveGuided.cpp; sourceTree = "<group>"; };
+		754E5D5C22C5E6DE00A29A5F /* CbcHeuristicPivotAndFix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicPivotAndFix.hpp; sourceTree = "<group>"; };
+		754E5D5D22C5E6DE00A29A5F /* CbcSimpleInteger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcSimpleInteger.cpp; sourceTree = "<group>"; };
+		754E5D5E22C5E6DE00A29A5F /* CbcDummyBranchingObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcDummyBranchingObject.cpp; sourceTree = "<group>"; };
+		754E5D5F22C5E6DF00A29A5F /* CbcHeuristicFPump.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicFPump.hpp; sourceTree = "<group>"; };
+		754E5D6122C5E6DF00A29A5F /* CbcCutGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcCutGenerator.cpp; sourceTree = "<group>"; };
+		754E5D6222C5E6DF00A29A5F /* CbcMessage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcMessage.hpp; sourceTree = "<group>"; };
+		754E5D6322C5E6E000A29A5F /* CbcTreeLocal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcTreeLocal.hpp; sourceTree = "<group>"; };
+		754E5D6422C5E6E100A29A5F /* CbcObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcObject.cpp; sourceTree = "<group>"; };
+		754E5D6522C5E6E200A29A5F /* config_cbc_default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_cbc_default.h; sourceTree = "<group>"; };
+		754E5D6822C5E6E200A29A5F /* CbcConsequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcConsequence.cpp; sourceTree = "<group>"; };
+		754E5D6922C5E6E300A29A5F /* CbcDummyBranchingObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcDummyBranchingObject.hpp; sourceTree = "<group>"; };
+		754E5D6A22C5E6E400A29A5F /* CbcHeuristicVND.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicVND.hpp; sourceTree = "<group>"; };
+		754E5D6C22C5E6E400A29A5F /* CbcCompareDepth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcCompareDepth.cpp; sourceTree = "<group>"; };
+		754E5D6D22C5E6E400A29A5F /* CbcSOS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CbcSOS.cpp; sourceTree = "<group>"; };
+		754E5D6E22C5E6E400A29A5F /* CbcSubProblem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcSubProblem.hpp; sourceTree = "<group>"; };
+		754E5D6F22C5E6E400A29A5F /* CbcHeuristicGreedy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcHeuristicGreedy.hpp; sourceTree = "<group>"; };
+		754E5D7022C5E6E500A29A5F /* CbcCompareBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcCompareBase.hpp; sourceTree = "<group>"; };
+		754E5D7122C5E6E500A29A5F /* CbcSimpleIntegerDynamicPseudoCost.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcSimpleIntegerDynamicPseudoCost.hpp; sourceTree = "<group>"; };
+		754E5D7322C5E6E500A29A5F /* CbcConsequence.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CbcConsequence.hpp; sourceTree = "<group>"; };
+		757134D022C61676002BF296 /* libCbc.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCbc.0.0.0.dylib; sourceTree = "<group>"; };
+		757134D122C61676002BF296 /* libCbc.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCbc.0.dylib; sourceTree = "<group>"; };
+		757134D222C61676002BF296 /* libCbc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCbc.dylib; sourceTree = "<group>"; };
+		757134D322C61676002BF296 /* libCbc.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libCbc.la; sourceTree = "<group>"; };
+		757134D422C61676002BF296 /* libCbcSolver.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCbcSolver.0.0.0.dylib; sourceTree = "<group>"; };
+		757134D522C61676002BF296 /* libCbcSolver.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCbcSolver.0.dylib; sourceTree = "<group>"; };
+		757134D622C61676002BF296 /* libCbcSolver.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCbcSolver.dylib; sourceTree = "<group>"; };
+		757134D722C61676002BF296 /* libCbcSolver.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libCbcSolver.la; sourceTree = "<group>"; };
+		757134D822C61676002BF296 /* libCgl.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCgl.0.0.0.dylib; sourceTree = "<group>"; };
+		757134D922C61676002BF296 /* libCgl.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCgl.0.dylib; sourceTree = "<group>"; };
+		757134DA22C61676002BF296 /* libCgl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCgl.dylib; sourceTree = "<group>"; };
+		757134DB22C61676002BF296 /* libCgl.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libCgl.la; sourceTree = "<group>"; };
+		757134DC22C61676002BF296 /* libClp.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libClp.0.0.0.dylib; sourceTree = "<group>"; };
+		757134DD22C61676002BF296 /* libClp.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libClp.0.dylib; sourceTree = "<group>"; };
+		757134DE22C61676002BF296 /* libClp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libClp.dylib; sourceTree = "<group>"; };
+		757134DF22C61676002BF296 /* libClp.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libClp.la; sourceTree = "<group>"; };
+		757134E022C61676002BF296 /* libClpSolver.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libClpSolver.0.0.0.dylib; sourceTree = "<group>"; };
+		757134E122C61676002BF296 /* libClpSolver.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libClpSolver.0.dylib; sourceTree = "<group>"; };
+		757134E222C61676002BF296 /* libClpSolver.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libClpSolver.dylib; sourceTree = "<group>"; };
+		757134E322C61676002BF296 /* libClpSolver.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libClpSolver.la; sourceTree = "<group>"; };
+		757134E422C61676002BF296 /* libcoinasl.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinasl.0.0.0.dylib; sourceTree = "<group>"; };
+		757134E522C61676002BF296 /* libcoinasl.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinasl.0.dylib; sourceTree = "<group>"; };
+		757134E622C61676002BF296 /* libcoinasl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinasl.dylib; sourceTree = "<group>"; };
+		757134E722C61676002BF296 /* libcoinasl.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libcoinasl.la; sourceTree = "<group>"; };
+		757134E822C61676002BF296 /* libcoinblas.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinblas.0.0.0.dylib; sourceTree = "<group>"; };
+		757134E922C61676002BF296 /* libcoinblas.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinblas.0.dylib; sourceTree = "<group>"; };
+		757134EA22C61676002BF296 /* libcoinblas.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinblas.dylib; sourceTree = "<group>"; };
+		757134EB22C61676002BF296 /* libcoinblas.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libcoinblas.la; sourceTree = "<group>"; };
+		757134EC22C61676002BF296 /* libcoinglpk.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinglpk.0.0.0.dylib; sourceTree = "<group>"; };
+		757134ED22C61676002BF296 /* libcoinglpk.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinglpk.0.dylib; sourceTree = "<group>"; };
+		757134EE22C61676002BF296 /* libcoinglpk.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinglpk.dylib; sourceTree = "<group>"; };
+		757134EF22C61676002BF296 /* libcoinglpk.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libcoinglpk.la; sourceTree = "<group>"; };
+		757134F022C61676002BF296 /* libcoinlapack.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinlapack.0.0.0.dylib; sourceTree = "<group>"; };
+		757134F122C61676002BF296 /* libcoinlapack.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinlapack.0.dylib; sourceTree = "<group>"; };
+		757134F222C61676002BF296 /* libcoinlapack.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinlapack.dylib; sourceTree = "<group>"; };
+		757134F322C61676002BF296 /* libcoinlapack.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libcoinlapack.la; sourceTree = "<group>"; };
+		757134F422C61676002BF296 /* libcoinmetis.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinmetis.0.0.0.dylib; sourceTree = "<group>"; };
+		757134F522C61676002BF296 /* libcoinmetis.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinmetis.0.dylib; sourceTree = "<group>"; };
+		757134F622C61676002BF296 /* libcoinmetis.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinmetis.dylib; sourceTree = "<group>"; };
+		757134F722C61676002BF296 /* libcoinmetis.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libcoinmetis.la; sourceTree = "<group>"; };
+		757134F822C61676002BF296 /* libcoinmumps.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinmumps.0.0.0.dylib; sourceTree = "<group>"; };
+		757134F922C61676002BF296 /* libcoinmumps.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinmumps.0.dylib; sourceTree = "<group>"; };
+		757134FA22C61676002BF296 /* libcoinmumps.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcoinmumps.dylib; sourceTree = "<group>"; };
+		757134FB22C61676002BF296 /* libcoinmumps.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libcoinmumps.la; sourceTree = "<group>"; };
+		757134FC22C61676002BF296 /* libCoinUtils.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCoinUtils.0.0.0.dylib; sourceTree = "<group>"; };
+		757134FD22C61676002BF296 /* libCoinUtils.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCoinUtils.0.dylib; sourceTree = "<group>"; };
+		757134FE22C61676002BF296 /* libCoinUtils.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libCoinUtils.dylib; sourceTree = "<group>"; };
+		757134FF22C61676002BF296 /* libCoinUtils.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libCoinUtils.la; sourceTree = "<group>"; };
+		7571350022C61676002BF296 /* libOsi.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsi.0.0.0.dylib; sourceTree = "<group>"; };
+		7571350122C61676002BF296 /* libOsi.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsi.0.dylib; sourceTree = "<group>"; };
+		7571350222C61676002BF296 /* libOsi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsi.dylib; sourceTree = "<group>"; };
+		7571350322C61676002BF296 /* libOsi.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOsi.la; sourceTree = "<group>"; };
+		7571350422C61676002BF296 /* libOsiCbc.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiCbc.0.0.0.dylib; sourceTree = "<group>"; };
+		7571350522C61676002BF296 /* libOsiCbc.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiCbc.0.dylib; sourceTree = "<group>"; };
+		7571350622C61676002BF296 /* libOsiCbc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiCbc.dylib; sourceTree = "<group>"; };
+		7571350722C61676002BF296 /* libOsiCbc.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOsiCbc.la; sourceTree = "<group>"; };
+		7571350822C61676002BF296 /* libOsiClp.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiClp.0.0.0.dylib; sourceTree = "<group>"; };
+		7571350922C61676002BF296 /* libOsiClp.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiClp.0.dylib; sourceTree = "<group>"; };
+		7571350A22C61676002BF296 /* libOsiClp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiClp.dylib; sourceTree = "<group>"; };
+		7571350B22C61676002BF296 /* libOsiClp.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOsiClp.la; sourceTree = "<group>"; };
+		7571350C22C61676002BF296 /* libOsiCommonTests.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiCommonTests.0.0.0.dylib; sourceTree = "<group>"; };
+		7571350D22C61676002BF296 /* libOsiCommonTests.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiCommonTests.0.dylib; sourceTree = "<group>"; };
+		7571350E22C61676002BF296 /* libOsiCommonTests.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiCommonTests.dylib; sourceTree = "<group>"; };
+		7571350F22C61676002BF296 /* libOsiCommonTests.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOsiCommonTests.la; sourceTree = "<group>"; };
+		7571351022C61676002BF296 /* libOsiGlpk.0.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiGlpk.0.0.0.dylib; sourceTree = "<group>"; };
+		7571351122C61676002BF296 /* libOsiGlpk.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiGlpk.0.dylib; sourceTree = "<group>"; };
+		7571351222C61676002BF296 /* libOsiGlpk.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOsiGlpk.dylib; sourceTree = "<group>"; };
+		7571351322C61676002BF296 /* libOsiGlpk.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libOsiGlpk.la; sourceTree = "<group>"; };
+		7571351522C61676002BF296 /* cbc.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = cbc.pc; sourceTree = "<group>"; };
+		7571351622C61676002BF296 /* cgl.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = cgl.pc; sourceTree = "<group>"; };
+		7571351722C61676002BF296 /* clp.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = clp.pc; sourceTree = "<group>"; };
+		7571351822C61676002BF296 /* coinasl.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coinasl.pc; sourceTree = "<group>"; };
+		7571351922C61676002BF296 /* coinblas.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coinblas.pc; sourceTree = "<group>"; };
+		7571351A22C61676002BF296 /* coindatamiplib3.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coindatamiplib3.pc; sourceTree = "<group>"; };
+		7571351B22C61676002BF296 /* coindatasample.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coindatasample.pc; sourceTree = "<group>"; };
+		7571351C22C61676002BF296 /* coinglpk.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coinglpk.pc; sourceTree = "<group>"; };
+		7571351D22C61676002BF296 /* coinlapack.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coinlapack.pc; sourceTree = "<group>"; };
+		7571351E22C61676002BF296 /* coinmetis.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coinmetis.pc; sourceTree = "<group>"; };
+		7571351F22C61676002BF296 /* coinmumps.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coinmumps.pc; sourceTree = "<group>"; };
+		7571352022C61676002BF296 /* coinutils.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = coinutils.pc; sourceTree = "<group>"; };
+		7571352122C61676002BF296 /* osi-cbc.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "osi-cbc.pc"; sourceTree = "<group>"; };
+		7571352222C61676002BF296 /* osi-clp.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "osi-clp.pc"; sourceTree = "<group>"; };
+		7571352322C61676002BF296 /* osi-glpk.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "osi-glpk.pc"; sourceTree = "<group>"; };
+		7571352422C61676002BF296 /* osi-unittests.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "osi-unittests.pc"; sourceTree = "<group>"; };
+		7571352522C61676002BF296 /* osi.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = osi.pc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +396,7 @@
 			children = (
 				754E5CB622C5BF8500A29A5F /* cbcUpdate */,
 				754E5CB522C5BF8500A29A5F /* Products */,
+				757134CE22C61676002BF296 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,11 +411,258 @@
 		754E5CB622C5BF8500A29A5F /* cbcUpdate */ = {
 			isa = PBXGroup;
 			children = (
-				754E5CB722C5BF8500A29A5F /* cbcUpdate.hpp */,
-				754E5CB922C5BF8500A29A5F /* cbcUpdatePriv.hpp */,
-				754E5CBB22C5BF8500A29A5F /* cbcUpdate.cpp */,
+				754E5D2A22C5E6D900A29A5F /* CbcBranchActual.hpp */,
+				754E5CCB22C5E6CE00A29A5F /* CbcBranchAllDifferent.cpp */,
+				754E5D0F22C5E6D600A29A5F /* CbcBranchAllDifferent.hpp */,
+				754E5CEF22C5E6D200A29A5F /* CbcBranchBase.hpp */,
+				754E5CDB22C5E6D000A29A5F /* CbcBranchCut.cpp */,
+				754E5CC922C5E6CE00A29A5F /* CbcBranchCut.hpp */,
+				754E5D2022C5E6D800A29A5F /* CbcBranchDecision.cpp */,
+				754E5D1C22C5E6D700A29A5F /* CbcBranchDecision.hpp */,
+				754E5CD922C5E6CF00A29A5F /* CbcBranchDefaultDecision.cpp */,
+				754E5CED22C5E6D200A29A5F /* CbcBranchDefaultDecision.hpp */,
+				754E5CF522C5E6D300A29A5F /* CbcBranchDynamic.cpp */,
+				754E5CCF22C5E6CF00A29A5F /* CbcBranchDynamic.hpp */,
+				754E5CFE22C5E6D400A29A5F /* CbcBranchingObject.cpp */,
+				754E5D0122C5E6D400A29A5F /* CbcBranchingObject.hpp */,
+				754E5D5822C5E6DE00A29A5F /* CbcBranchLotsize.cpp */,
+				754E5D4222C5E6DB00A29A5F /* CbcBranchLotsize.hpp */,
+				754E5D1F22C5E6D800A29A5F /* CbcBranchToFixLots.cpp */,
+				754E5CF222C5E6D200A29A5F /* CbcBranchToFixLots.hpp */,
+				754E5D3322C5E6DA00A29A5F /* CbcClique.cpp */,
+				754E5D4B22C5E6DC00A29A5F /* CbcClique.hpp */,
+				754E5D4722C5E6DC00A29A5F /* CbcCompare.hpp */,
+				754E5CCE22C5E6CE00A29A5F /* CbcCompareActual.hpp */,
+				754E5D7022C5E6E500A29A5F /* CbcCompareBase.hpp */,
+				754E5CE022C5E6D000A29A5F /* CbcCompareDefault.cpp */,
+				754E5CF722C5E6D300A29A5F /* CbcCompareDefault.hpp */,
+				754E5D6C22C5E6E400A29A5F /* CbcCompareDepth.cpp */,
+				754E5D3C22C5E6DB00A29A5F /* CbcCompareDepth.hpp */,
+				754E5CC722C5E6CE00A29A5F /* CbcCompareEstimate.cpp */,
+				754E5D0522C5E6D400A29A5F /* CbcCompareEstimate.hpp */,
+				754E5CDC22C5E6D000A29A5F /* CbcCompareObjective.cpp */,
+				754E5D5322C5E6DD00A29A5F /* CbcCompareObjective.hpp */,
+				754E5D4C22C5E6DC00A29A5F /* CbcConfig.h */,
+				754E5D6822C5E6E200A29A5F /* CbcConsequence.cpp */,
+				754E5D7322C5E6E500A29A5F /* CbcConsequence.hpp */,
+				754E5CEC22C5E6D200A29A5F /* CbcCountRowCut.cpp */,
+				754E5D2322C5E6D800A29A5F /* CbcCountRowCut.hpp */,
+				754E5D6122C5E6DF00A29A5F /* CbcCutGenerator.cpp */,
+				754E5CFA22C5E6D300A29A5F /* CbcCutGenerator.hpp */,
+				754E5CD322C5E6CF00A29A5F /* CbcCutModifier.cpp */,
+				754E5CCA22C5E6CE00A29A5F /* CbcCutModifier.hpp */,
+				754E5CF422C5E6D300A29A5F /* CbcCutSubsetModifier.cpp */,
+				754E5D5722C5E6DE00A29A5F /* CbcCutSubsetModifier.hpp */,
+				754E5D5E22C5E6DE00A29A5F /* CbcDummyBranchingObject.cpp */,
+				754E5D6922C5E6E300A29A5F /* CbcDummyBranchingObject.hpp */,
+				754E5D0322C5E6D400A29A5F /* CbcEventHandler.cpp */,
+				754E5D4A22C5E6DC00A29A5F /* CbcEventHandler.hpp */,
+				754E5D4922C5E6DC00A29A5F /* CbcFathom.cpp */,
+				754E5D3522C5E6DA00A29A5F /* CbcFathom.hpp */,
+				754E5CD622C5E6CF00A29A5F /* CbcFathomDynamicProgramming.cpp */,
+				754E5CE222C5E6D100A29A5F /* CbcFathomDynamicProgramming.hpp */,
+				754E5CE622C5E6D100A29A5F /* CbcFeasibilityBase.hpp */,
+				754E5D2622C5E6D800A29A5F /* CbcFixVariable.cpp */,
+				754E5CF022C5E6D200A29A5F /* CbcFixVariable.hpp */,
+				754E5D5122C5E6DD00A29A5F /* CbcFollowOn.cpp */,
+				754E5D5422C5E6DD00A29A5F /* CbcFollowOn.hpp */,
+				754E5D2522C5E6D800A29A5F /* CbcFullNodeInfo.cpp */,
+				754E5D4422C5E6DC00A29A5F /* CbcFullNodeInfo.hpp */,
+				754E5CE322C5E6D100A29A5F /* CbcGenCtlBlk.cpp */,
+				754E5D3B22C5E6DB00A29A5F /* CbcGenCtlBlk.hpp */,
+				754E5D1322C5E6D600A29A5F /* CbcGeneral.cpp */,
+				754E5D2B22C5E6D900A29A5F /* CbcGeneral.hpp */,
+				754E5D2922C5E6D900A29A5F /* CbcGeneralDepth.cpp */,
+				754E5CDF22C5E6D000A29A5F /* CbcGeneralDepth.hpp */,
+				754E5D1522C5E6D700A29A5F /* CbcHeuristic.cpp */,
+				754E5D4322C5E6DB00A29A5F /* CbcHeuristic.hpp */,
+				754E5D3422C5E6DA00A29A5F /* CbcHeuristicDINS.cpp */,
+				754E5D0822C5E6D500A29A5F /* CbcHeuristicDINS.hpp */,
+				754E5CC422C5E6CE00A29A5F /* CbcHeuristicDive.cpp */,
+				754E5D2422C5E6D800A29A5F /* CbcHeuristicDive.hpp */,
+				754E5D4822C5E6DC00A29A5F /* CbcHeuristicDiveCoefficient.cpp */,
+				754E5CCD22C5E6CE00A29A5F /* CbcHeuristicDiveCoefficient.hpp */,
+				754E5D3622C5E6DA00A29A5F /* CbcHeuristicDiveFractional.cpp */,
+				754E5CD122C5E6CF00A29A5F /* CbcHeuristicDiveFractional.hpp */,
+				754E5D5922C5E6DE00A29A5F /* CbcHeuristicDiveGuided.cpp */,
+				754E5CFF22C5E6D400A29A5F /* CbcHeuristicDiveGuided.hpp */,
+				754E5D3122C5E6DA00A29A5F /* CbcHeuristicDiveLineSearch.cpp */,
+				754E5D0722C5E6D500A29A5F /* CbcHeuristicDiveLineSearch.hpp */,
+				754E5D1122C5E6D600A29A5F /* CbcHeuristicDivePseudoCost.cpp */,
+				754E5D3F22C5E6DB00A29A5F /* CbcHeuristicDivePseudoCost.hpp */,
+				754E5CD522C5E6CF00A29A5F /* CbcHeuristicDiveVectorLength.cpp */,
+				754E5D5522C5E6DD00A29A5F /* CbcHeuristicDiveVectorLength.hpp */,
+				754E5CD222C5E6CF00A29A5F /* CbcHeuristicDW.cpp */,
+				754E5D5622C5E6DE00A29A5F /* CbcHeuristicDW.hpp */,
+				754E5D0022C5E6D400A29A5F /* CbcHeuristicFPump.cpp */,
+				754E5D5F22C5E6DF00A29A5F /* CbcHeuristicFPump.hpp */,
+				754E5D2E22C5E6D900A29A5F /* CbcHeuristicGreedy.cpp */,
+				754E5D6F22C5E6E400A29A5F /* CbcHeuristicGreedy.hpp */,
+				754E5D3222C5E6DA00A29A5F /* CbcHeuristicLocal.cpp */,
+				754E5D0C22C5E6D600A29A5F /* CbcHeuristicLocal.hpp */,
+				754E5D0D22C5E6D600A29A5F /* CbcHeuristicPivotAndFix.cpp */,
+				754E5D5C22C5E6DE00A29A5F /* CbcHeuristicPivotAndFix.hpp */,
+				754E5D0422C5E6D400A29A5F /* CbcHeuristicRandRound.cpp */,
+				754E5CC622C5E6CE00A29A5F /* CbcHeuristicRandRound.hpp */,
+				754E5D1B22C5E6D700A29A5F /* CbcHeuristicRENS.cpp */,
+				754E5CE122C5E6D000A29A5F /* CbcHeuristicRENS.hpp */,
+				754E5D3722C5E6DA00A29A5F /* CbcHeuristicRINS.cpp */,
+				754E5D1722C5E6D700A29A5F /* CbcHeuristicRINS.hpp */,
+				754E5D0622C5E6D400A29A5F /* CbcHeuristicVND.cpp */,
+				754E5D6A22C5E6E400A29A5F /* CbcHeuristicVND.hpp */,
+				754E5CD722C5E6CF00A29A5F /* CbcMessage.cpp */,
+				754E5D6222C5E6DF00A29A5F /* CbcMessage.hpp */,
+				754E5D1922C5E6D700A29A5F /* CbcModel.cpp */,
+				754E5D4D22C5E6DD00A29A5F /* CbcModel.hpp */,
+				754E5D2C22C5E6D900A29A5F /* CbcNode.cpp */,
+				754E5CE722C5E6D100A29A5F /* CbcNode.hpp */,
+				754E5CCC22C5E6CE00A29A5F /* CbcNodeInfo.cpp */,
+				754E5CE822C5E6D100A29A5F /* CbcNodeInfo.hpp */,
+				754E5D1E22C5E6D800A29A5F /* CbcNWay.cpp */,
+				754E5D4F22C5E6DD00A29A5F /* CbcNWay.hpp */,
+				754E5D6422C5E6E100A29A5F /* CbcObject.cpp */,
+				754E5D4122C5E6DB00A29A5F /* CbcObject.hpp */,
+				754E5D3922C5E6DA00A29A5F /* CbcObjectUpdateData.cpp */,
+				754E5D1822C5E6D700A29A5F /* CbcObjectUpdateData.hpp */,
+				754E5D5222C5E6DD00A29A5F /* CbcPartialNodeInfo.cpp */,
+				754E5CE922C5E6D100A29A5F /* CbcPartialNodeInfo.hpp */,
+				754E5D5D22C5E6DE00A29A5F /* CbcSimpleInteger.cpp */,
+				754E5CF822C5E6D300A29A5F /* CbcSimpleInteger.hpp */,
+				754E5CF122C5E6D200A29A5F /* CbcSimpleIntegerDynamicPseudoCost.cpp */,
+				754E5D7122C5E6E500A29A5F /* CbcSimpleIntegerDynamicPseudoCost.hpp */,
+				754E5CD822C5E6CF00A29A5F /* CbcSimpleIntegerPseudoCost.cpp */,
+				754E5D2F22C5E6D900A29A5F /* CbcSimpleIntegerPseudoCost.hpp */,
+				754E5D6D22C5E6E400A29A5F /* CbcSOS.cpp */,
+				754E5CC322C5E6CE00A29A5F /* CbcSOS.hpp */,
+				754E5CEB22C5E6D200A29A5F /* CbcStatistics.cpp */,
+				754E5D4622C5E6DC00A29A5F /* CbcStatistics.hpp */,
+				754E5D3D22C5E6DB00A29A5F /* CbcStrategy.cpp */,
+				754E5D0B22C5E6D600A29A5F /* CbcStrategy.hpp */,
+				754E5D2722C5E6D800A29A5F /* CbcSubProblem.cpp */,
+				754E5D6E22C5E6E400A29A5F /* CbcSubProblem.hpp */,
+				754E5D1622C5E6D700A29A5F /* CbcSymmetry.cpp */,
+				754E5CE422C5E6D100A29A5F /* CbcSymmetry.hpp */,
+				754E5CFD22C5E6D400A29A5F /* CbcThread.cpp */,
+				754E5CC222C5E6CD00A29A5F /* CbcThread.hpp */,
+				754E5D4522C5E6DC00A29A5F /* CbcTree.cpp */,
+				754E5CC822C5E6CE00A29A5F /* CbcTree.hpp */,
+				754E5CD422C5E6CF00A29A5F /* CbcTreeLocal.cpp */,
+				754E5D6322C5E6E000A29A5F /* CbcTreeLocal.hpp */,
+				754E5CEE22C5E6D200A29A5F /* ClpAmplObjective.hpp */,
+				754E5D5022C5E6DD00A29A5F /* ClpConstraintAmpl.hpp */,
+				754E5D6522C5E6E200A29A5F /* config_cbc_default.h */,
+				754E5CF322C5E6D300A29A5F /* config_default.h */,
 			);
 			path = cbcUpdate;
+			sourceTree = "<group>";
+		};
+		757134CE22C61676002BF296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				757134CF22C61676002BF296 /* lib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		757134CF22C61676002BF296 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				757134D022C61676002BF296 /* libCbc.0.0.0.dylib */,
+				757134D122C61676002BF296 /* libCbc.0.dylib */,
+				757134D222C61676002BF296 /* libCbc.dylib */,
+				757134D322C61676002BF296 /* libCbc.la */,
+				757134D422C61676002BF296 /* libCbcSolver.0.0.0.dylib */,
+				757134D522C61676002BF296 /* libCbcSolver.0.dylib */,
+				757134D622C61676002BF296 /* libCbcSolver.dylib */,
+				757134D722C61676002BF296 /* libCbcSolver.la */,
+				757134D822C61676002BF296 /* libCgl.0.0.0.dylib */,
+				757134D922C61676002BF296 /* libCgl.0.dylib */,
+				757134DA22C61676002BF296 /* libCgl.dylib */,
+				757134DB22C61676002BF296 /* libCgl.la */,
+				757134DC22C61676002BF296 /* libClp.0.0.0.dylib */,
+				757134DD22C61676002BF296 /* libClp.0.dylib */,
+				757134DE22C61676002BF296 /* libClp.dylib */,
+				757134DF22C61676002BF296 /* libClp.la */,
+				757134E022C61676002BF296 /* libClpSolver.0.0.0.dylib */,
+				757134E122C61676002BF296 /* libClpSolver.0.dylib */,
+				757134E222C61676002BF296 /* libClpSolver.dylib */,
+				757134E322C61676002BF296 /* libClpSolver.la */,
+				757134E422C61676002BF296 /* libcoinasl.0.0.0.dylib */,
+				757134E522C61676002BF296 /* libcoinasl.0.dylib */,
+				757134E622C61676002BF296 /* libcoinasl.dylib */,
+				757134E722C61676002BF296 /* libcoinasl.la */,
+				757134E822C61676002BF296 /* libcoinblas.0.0.0.dylib */,
+				757134E922C61676002BF296 /* libcoinblas.0.dylib */,
+				757134EA22C61676002BF296 /* libcoinblas.dylib */,
+				757134EB22C61676002BF296 /* libcoinblas.la */,
+				757134EC22C61676002BF296 /* libcoinglpk.0.0.0.dylib */,
+				757134ED22C61676002BF296 /* libcoinglpk.0.dylib */,
+				757134EE22C61676002BF296 /* libcoinglpk.dylib */,
+				757134EF22C61676002BF296 /* libcoinglpk.la */,
+				757134F022C61676002BF296 /* libcoinlapack.0.0.0.dylib */,
+				757134F122C61676002BF296 /* libcoinlapack.0.dylib */,
+				757134F222C61676002BF296 /* libcoinlapack.dylib */,
+				757134F322C61676002BF296 /* libcoinlapack.la */,
+				757134F422C61676002BF296 /* libcoinmetis.0.0.0.dylib */,
+				757134F522C61676002BF296 /* libcoinmetis.0.dylib */,
+				757134F622C61676002BF296 /* libcoinmetis.dylib */,
+				757134F722C61676002BF296 /* libcoinmetis.la */,
+				757134F822C61676002BF296 /* libcoinmumps.0.0.0.dylib */,
+				757134F922C61676002BF296 /* libcoinmumps.0.dylib */,
+				757134FA22C61676002BF296 /* libcoinmumps.dylib */,
+				757134FB22C61676002BF296 /* libcoinmumps.la */,
+				757134FC22C61676002BF296 /* libCoinUtils.0.0.0.dylib */,
+				757134FD22C61676002BF296 /* libCoinUtils.0.dylib */,
+				757134FE22C61676002BF296 /* libCoinUtils.dylib */,
+				757134FF22C61676002BF296 /* libCoinUtils.la */,
+				7571350022C61676002BF296 /* libOsi.0.0.0.dylib */,
+				7571350122C61676002BF296 /* libOsi.0.dylib */,
+				7571350222C61676002BF296 /* libOsi.dylib */,
+				7571350322C61676002BF296 /* libOsi.la */,
+				7571350422C61676002BF296 /* libOsiCbc.0.0.0.dylib */,
+				7571350522C61676002BF296 /* libOsiCbc.0.dylib */,
+				7571350622C61676002BF296 /* libOsiCbc.dylib */,
+				7571350722C61676002BF296 /* libOsiCbc.la */,
+				7571350822C61676002BF296 /* libOsiClp.0.0.0.dylib */,
+				7571350922C61676002BF296 /* libOsiClp.0.dylib */,
+				7571350A22C61676002BF296 /* libOsiClp.dylib */,
+				7571350B22C61676002BF296 /* libOsiClp.la */,
+				7571350C22C61676002BF296 /* libOsiCommonTests.0.0.0.dylib */,
+				7571350D22C61676002BF296 /* libOsiCommonTests.0.dylib */,
+				7571350E22C61676002BF296 /* libOsiCommonTests.dylib */,
+				7571350F22C61676002BF296 /* libOsiCommonTests.la */,
+				7571351022C61676002BF296 /* libOsiGlpk.0.0.0.dylib */,
+				7571351122C61676002BF296 /* libOsiGlpk.0.dylib */,
+				7571351222C61676002BF296 /* libOsiGlpk.dylib */,
+				7571351322C61676002BF296 /* libOsiGlpk.la */,
+				7571351422C61676002BF296 /* pkgconfig */,
+			);
+			name = lib;
+			path = ../../TestCbc/build/lib;
+			sourceTree = "<group>";
+		};
+		7571351422C61676002BF296 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				7571351522C61676002BF296 /* cbc.pc */,
+				7571351622C61676002BF296 /* cgl.pc */,
+				7571351722C61676002BF296 /* clp.pc */,
+				7571351822C61676002BF296 /* coinasl.pc */,
+				7571351922C61676002BF296 /* coinblas.pc */,
+				7571351A22C61676002BF296 /* coindatamiplib3.pc */,
+				7571351B22C61676002BF296 /* coindatasample.pc */,
+				7571351C22C61676002BF296 /* coinglpk.pc */,
+				7571351D22C61676002BF296 /* coinlapack.pc */,
+				7571351E22C61676002BF296 /* coinmetis.pc */,
+				7571351F22C61676002BF296 /* coinmumps.pc */,
+				7571352022C61676002BF296 /* coinutils.pc */,
+				7571352122C61676002BF296 /* osi-cbc.pc */,
+				7571352222C61676002BF296 /* osi-clp.pc */,
+				7571352322C61676002BF296 /* osi-glpk.pc */,
+				7571352422C61676002BF296 /* osi-unittests.pc */,
+				7571352522C61676002BF296 /* osi.pc */,
+			);
+			path = pkgconfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,8 +672,82 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754E5CB822C5BF8500A29A5F /* cbcUpdate.hpp in Headers */,
-				754E5CBA22C5BF8500A29A5F /* cbcUpdatePriv.hpp in Headers */,
+				754E5E2122C5E6E600A29A5F /* CbcHeuristicGreedy.hpp in Headers */,
+				754E5DF322C5E6E600A29A5F /* CbcObject.hpp in Headers */,
+				754E5DC122C5E6E600A29A5F /* CbcBranchAllDifferent.hpp in Headers */,
+				754E5E2322C5E6E600A29A5F /* CbcSimpleIntegerDynamicPseudoCost.hpp in Headers */,
+				754E5DA522C5E6E600A29A5F /* config_default.h in Headers */,
+				754E5E1C22C5E6E600A29A5F /* CbcHeuristicVND.hpp in Headers */,
+				754E5D7522C5E6E600A29A5F /* CbcSOS.hpp in Headers */,
+				754E5DFC22C5E6E600A29A5F /* CbcEventHandler.hpp in Headers */,
+				754E5DAA22C5E6E600A29A5F /* CbcSimpleInteger.hpp in Headers */,
+				754E5DAC22C5E6E600A29A5F /* CbcCutGenerator.hpp in Headers */,
+				754E5DA422C5E6E600A29A5F /* CbcBranchToFixLots.hpp in Headers */,
+				754E5DDC22C5E6E600A29A5F /* CbcBranchActual.hpp in Headers */,
+				754E5E2022C5E6E600A29A5F /* CbcSubProblem.hpp in Headers */,
+				754E5E0922C5E6E600A29A5F /* CbcCutSubsetModifier.hpp in Headers */,
+				754E5DFF22C5E6E600A29A5F /* CbcModel.hpp in Headers */,
+				754E5DF122C5E6E600A29A5F /* CbcHeuristicDivePseudoCost.hpp in Headers */,
+				754E5DDD22C5E6E600A29A5F /* CbcGeneral.hpp in Headers */,
+				754E5E1422C5E6E600A29A5F /* CbcMessage.hpp in Headers */,
+				754E5DED22C5E6E600A29A5F /* CbcGenCtlBlk.hpp in Headers */,
+				754E5D7F22C5E6E600A29A5F /* CbcHeuristicDiveCoefficient.hpp in Headers */,
+				754E5E0722C5E6E600A29A5F /* CbcHeuristicDiveVectorLength.hpp in Headers */,
+				754E5E1522C5E6E600A29A5F /* CbcTreeLocal.hpp in Headers */,
+				754E5D7C22C5E6E600A29A5F /* CbcCutModifier.hpp in Headers */,
+				754E5E0E22C5E6E600A29A5F /* CbcHeuristicPivotAndFix.hpp in Headers */,
+				754E5DB322C5E6E600A29A5F /* CbcBranchingObject.hpp in Headers */,
+				754E5DD622C5E6E600A29A5F /* CbcHeuristicDive.hpp in Headers */,
+				754E5DFD22C5E6E600A29A5F /* CbcClique.hpp in Headers */,
+				754E5DF922C5E6E600A29A5F /* CbcCompare.hpp in Headers */,
+				754E5D9422C5E6E600A29A5F /* CbcFathomDynamicProgramming.hpp in Headers */,
+				754E5DF622C5E6E600A29A5F /* CbcFullNodeInfo.hpp in Headers */,
+				754E5D8122C5E6E600A29A5F /* CbcBranchDynamic.hpp in Headers */,
+				754E5DE122C5E6E600A29A5F /* CbcSimpleIntegerPseudoCost.hpp in Headers */,
+				754E5DA222C5E6E600A29A5F /* CbcFixVariable.hpp in Headers */,
+				754E5DFE22C5E6E600A29A5F /* CbcConfig.h in Headers */,
+				754E5DBA22C5E6E600A29A5F /* CbcHeuristicDINS.hpp in Headers */,
+				754E5DA022C5E6E600A29A5F /* ClpAmplObjective.hpp in Headers */,
+				754E5D9822C5E6E600A29A5F /* CbcFeasibilityBase.hpp in Headers */,
+				754E5D9A22C5E6E600A29A5F /* CbcNodeInfo.hpp in Headers */,
+				754E5DEE22C5E6E600A29A5F /* CbcCompareDepth.hpp in Headers */,
+				754E5DB922C5E6E600A29A5F /* CbcHeuristicDiveLineSearch.hpp in Headers */,
+				754E5E1B22C5E6E600A29A5F /* CbcDummyBranchingObject.hpp in Headers */,
+				754E5E0522C5E6E600A29A5F /* CbcCompareObjective.hpp in Headers */,
+				754E5D9F22C5E6E600A29A5F /* CbcBranchDefaultDecision.hpp in Headers */,
+				754E5E1122C5E6E600A29A5F /* CbcHeuristicFPump.hpp in Headers */,
+				754E5E0822C5E6E600A29A5F /* CbcHeuristicDW.hpp in Headers */,
+				754E5D8322C5E6E600A29A5F /* CbcHeuristicDiveFractional.hpp in Headers */,
+				754E5DF422C5E6E600A29A5F /* CbcBranchLotsize.hpp in Headers */,
+				754E5D8022C5E6E600A29A5F /* CbcCompareActual.hpp in Headers */,
+				754E5DB122C5E6E600A29A5F /* CbcHeuristicDiveGuided.hpp in Headers */,
+				754E5DBD22C5E6E600A29A5F /* CbcStrategy.hpp in Headers */,
+				754E5D9922C5E6E600A29A5F /* CbcNode.hpp in Headers */,
+				754E5E0622C5E6E600A29A5F /* CbcFollowOn.hpp in Headers */,
+				754E5DC922C5E6E600A29A5F /* CbcHeuristicRINS.hpp in Headers */,
+				754E5D7A22C5E6E600A29A5F /* CbcTree.hpp in Headers */,
+				754E5DB722C5E6E600A29A5F /* CbcCompareEstimate.hpp in Headers */,
+				754E5D9622C5E6E600A29A5F /* CbcSymmetry.hpp in Headers */,
+				754E5DCA22C5E6E600A29A5F /* CbcObjectUpdateData.hpp in Headers */,
+				754E5DA922C5E6E600A29A5F /* CbcCompareDefault.hpp in Headers */,
+				754E5DA122C5E6E600A29A5F /* CbcBranchBase.hpp in Headers */,
+				754E5E1722C5E6E600A29A5F /* config_cbc_default.h in Headers */,
+				754E5D9322C5E6E600A29A5F /* CbcHeuristicRENS.hpp in Headers */,
+				754E5DF822C5E6E600A29A5F /* CbcStatistics.hpp in Headers */,
+				754E5D7422C5E6E600A29A5F /* CbcThread.hpp in Headers */,
+				754E5D7822C5E6E600A29A5F /* CbcHeuristicRandRound.hpp in Headers */,
+				754E5E0222C5E6E600A29A5F /* ClpConstraintAmpl.hpp in Headers */,
+				754E5D7B22C5E6E600A29A5F /* CbcBranchCut.hpp in Headers */,
+				754E5DE722C5E6E600A29A5F /* CbcFathom.hpp in Headers */,
+				754E5DCE22C5E6E600A29A5F /* CbcBranchDecision.hpp in Headers */,
+				754E5E2522C5E6E600A29A5F /* CbcConsequence.hpp in Headers */,
+				754E5D9122C5E6E600A29A5F /* CbcGeneralDepth.hpp in Headers */,
+				754E5E2222C5E6E600A29A5F /* CbcCompareBase.hpp in Headers */,
+				754E5DD522C5E6E600A29A5F /* CbcCountRowCut.hpp in Headers */,
+				754E5DBE22C5E6E600A29A5F /* CbcHeuristicLocal.hpp in Headers */,
+				754E5D9B22C5E6E600A29A5F /* CbcPartialNodeInfo.hpp in Headers */,
+				754E5E0122C5E6E600A29A5F /* CbcNWay.hpp in Headers */,
+				754E5DF522C5E6E600A29A5F /* CbcHeuristic.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +807,71 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754E5CBC22C5BF8500A29A5F /* cbcUpdate.cpp in Sources */,
+				754E5DA722C5E6E600A29A5F /* CbcBranchDynamic.cpp in Sources */,
+				754E5E0B22C5E6E600A29A5F /* CbcHeuristicDiveGuided.cpp in Sources */,
+				754E5DB222C5E6E600A29A5F /* CbcHeuristicFPump.cpp in Sources */,
+				754E5DEF22C5E6E600A29A5F /* CbcStrategy.cpp in Sources */,
+				754E5DCD22C5E6E600A29A5F /* CbcHeuristicRENS.cpp in Sources */,
+				754E5DD722C5E6E600A29A5F /* CbcFullNodeInfo.cpp in Sources */,
+				754E5DD122C5E6E600A29A5F /* CbcBranchToFixLots.cpp in Sources */,
+				754E5E1A22C5E6E600A29A5F /* CbcConsequence.cpp in Sources */,
+				754E5DB622C5E6E600A29A5F /* CbcHeuristicRandRound.cpp in Sources */,
+				754E5D9222C5E6E600A29A5F /* CbcCompareDefault.cpp in Sources */,
+				754E5D8E22C5E6E600A29A5F /* CbcCompareObjective.cpp in Sources */,
+				754E5D9E22C5E6E600A29A5F /* CbcCountRowCut.cpp in Sources */,
+				754E5DFA22C5E6E600A29A5F /* CbcHeuristicDiveCoefficient.cpp in Sources */,
+				754E5D8822C5E6E600A29A5F /* CbcFathomDynamicProgramming.cpp in Sources */,
+				754E5E0A22C5E6E600A29A5F /* CbcBranchLotsize.cpp in Sources */,
+				754E5E1E22C5E6E600A29A5F /* CbcCompareDepth.cpp in Sources */,
+				754E5DFB22C5E6E600A29A5F /* CbcFathom.cpp in Sources */,
+				754E5D7922C5E6E600A29A5F /* CbcCompareEstimate.cpp in Sources */,
+				754E5D8922C5E6E600A29A5F /* CbcMessage.cpp in Sources */,
+				754E5D9D22C5E6E600A29A5F /* CbcStatistics.cpp in Sources */,
+				754E5D9522C5E6E600A29A5F /* CbcGenCtlBlk.cpp in Sources */,
+				754E5DB522C5E6E600A29A5F /* CbcEventHandler.cpp in Sources */,
+				754E5DA622C5E6E600A29A5F /* CbcCutSubsetModifier.cpp in Sources */,
+				754E5DEB22C5E6E600A29A5F /* CbcObjectUpdateData.cpp in Sources */,
+				754E5DD922C5E6E600A29A5F /* CbcSubProblem.cpp in Sources */,
+				754E5DD022C5E6E600A29A5F /* CbcNWay.cpp in Sources */,
+				754E5E1622C5E6E600A29A5F /* CbcObject.cpp in Sources */,
+				754E5D7622C5E6E600A29A5F /* CbcHeuristicDive.cpp in Sources */,
+				754E5DC722C5E6E600A29A5F /* CbcHeuristic.cpp in Sources */,
+				754E5E0422C5E6E600A29A5F /* CbcPartialNodeInfo.cpp in Sources */,
+				754E5E0F22C5E6E600A29A5F /* CbcSimpleInteger.cpp in Sources */,
+				754E5DDE22C5E6E600A29A5F /* CbcNode.cpp in Sources */,
+				754E5D8522C5E6E600A29A5F /* CbcCutModifier.cpp in Sources */,
+				754E5D8622C5E6E600A29A5F /* CbcTreeLocal.cpp in Sources */,
+				754E5D8D22C5E6E600A29A5F /* CbcBranchCut.cpp in Sources */,
+				754E5DD822C5E6E600A29A5F /* CbcFixVariable.cpp in Sources */,
+				754E5DE922C5E6E600A29A5F /* CbcHeuristicRINS.cpp in Sources */,
+				754E5DBF22C5E6E600A29A5F /* CbcHeuristicPivotAndFix.cpp in Sources */,
+				754E5D8722C5E6E600A29A5F /* CbcHeuristicDiveVectorLength.cpp in Sources */,
+				754E5DE522C5E6E600A29A5F /* CbcClique.cpp in Sources */,
+				754E5E1022C5E6E600A29A5F /* CbcDummyBranchingObject.cpp in Sources */,
+				754E5E0322C5E6E600A29A5F /* CbcFollowOn.cpp in Sources */,
+				754E5DD222C5E6E600A29A5F /* CbcBranchDecision.cpp in Sources */,
+				754E5DF722C5E6E600A29A5F /* CbcTree.cpp in Sources */,
+				754E5D8422C5E6E600A29A5F /* CbcHeuristicDW.cpp in Sources */,
+				754E5DE622C5E6E600A29A5F /* CbcHeuristicDINS.cpp in Sources */,
+				754E5D7E22C5E6E600A29A5F /* CbcNodeInfo.cpp in Sources */,
+				754E5D7D22C5E6E600A29A5F /* CbcBranchAllDifferent.cpp in Sources */,
+				754E5DA322C5E6E600A29A5F /* CbcSimpleIntegerDynamicPseudoCost.cpp in Sources */,
+				754E5DE022C5E6E600A29A5F /* CbcHeuristicGreedy.cpp in Sources */,
+				754E5DC322C5E6E600A29A5F /* CbcHeuristicDivePseudoCost.cpp in Sources */,
+				754E5DC822C5E6E600A29A5F /* CbcSymmetry.cpp in Sources */,
+				754E5DC522C5E6E600A29A5F /* CbcGeneral.cpp in Sources */,
+				754E5D8B22C5E6E600A29A5F /* CbcBranchDefaultDecision.cpp in Sources */,
+				754E5DDB22C5E6E600A29A5F /* CbcGeneralDepth.cpp in Sources */,
+				754E5DE322C5E6E600A29A5F /* CbcHeuristicDiveLineSearch.cpp in Sources */,
+				754E5DB822C5E6E600A29A5F /* CbcHeuristicVND.cpp in Sources */,
+				754E5E1322C5E6E600A29A5F /* CbcCutGenerator.cpp in Sources */,
+				754E5DE822C5E6E600A29A5F /* CbcHeuristicDiveFractional.cpp in Sources */,
+				754E5E1F22C5E6E600A29A5F /* CbcSOS.cpp in Sources */,
+				754E5DCB22C5E6E600A29A5F /* CbcModel.cpp in Sources */,
+				754E5D8A22C5E6E600A29A5F /* CbcSimpleIntegerPseudoCost.cpp in Sources */,
+				754E5DB022C5E6E600A29A5F /* CbcBranchingObject.cpp in Sources */,
+				754E5DAF22C5E6E600A29A5F /* CbcThread.cpp in Sources */,
+				754E5DE422C5E6E600A29A5F /* CbcHeuristicLocal.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +998,19 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					COIN_HAS_CLP,
+					Xcode,
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/guanglei.wgl/TestCbc/build/include/coin/;
+				OTHER_LDFLAGS = (
+					/Users/guanglei.wgl/TestCbc/build/lib/libCgl.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsiClp.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libClp.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libCoinUtils.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsi.dylib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -266,7 +1025,19 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					COIN_HAS_CLP,
+					Xcode,
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = /Users/guanglei.wgl/TestCbc/build/include/coin/;
+				OTHER_LDFLAGS = (
+					/Users/guanglei.wgl/TestCbc/build/lib/libCgl.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsiClp.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libClp.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libCoinUtils.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsi.dylib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

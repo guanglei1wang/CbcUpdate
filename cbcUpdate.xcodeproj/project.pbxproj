@@ -148,7 +148,32 @@
 		754E5E2222C5E6E600A29A5F /* CbcCompareBase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D7022C5E6E500A29A5F /* CbcCompareBase.hpp */; };
 		754E5E2322C5E6E600A29A5F /* CbcSimpleIntegerDynamicPseudoCost.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D7122C5E6E500A29A5F /* CbcSimpleIntegerDynamicPseudoCost.hpp */; };
 		754E5E2522C5E6E600A29A5F /* CbcConsequence.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 754E5D7322C5E6E500A29A5F /* CbcConsequence.hpp */; };
+		757135CA22C662D6002BF296 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135C922C662D6002BF296 /* main.cpp */; };
+		757135D222C84D5C002BF296 /* Cbc_C_Interface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135D022C84D5C002BF296 /* Cbc_C_Interface.cpp */; };
+		757135D322C84D5C002BF296 /* Cbc_ampl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135D122C84D5C002BF296 /* Cbc_ampl.cpp */; };
+		757135D522C84D85002BF296 /* CbcCbcParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135D422C84D85002BF296 /* CbcCbcParam.cpp */; };
+		757135D922C84DA5002BF296 /* CbcLinked.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135D622C84DA5002BF296 /* CbcLinked.cpp */; };
+		757135DA22C84DA5002BF296 /* CbcLinkedUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135D822C84DA5002BF296 /* CbcLinkedUtils.cpp */; };
+		757135DC22C84DC6002BF296 /* CbcSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135DB22C84DC6002BF296 /* CbcSolver.cpp */; };
+		757135DF22C84E02002BF296 /* CbcSolverHeuristics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135DD22C84E02002BF296 /* CbcSolverHeuristics.cpp */; };
+		757135E122C84E0C002BF296 /* CbcSolver.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 757135E022C84E0C002BF296 /* CbcSolver.hpp */; };
+		757135E322C84E1D002BF296 /* unitTestClp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135E222C84E1D002BF296 /* unitTestClp.cpp */; };
+		757135E822C84E38002BF296 /* CbcSolverExpandKnapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135E422C84E38002BF296 /* CbcSolverExpandKnapsack.cpp */; };
+		757135E922C84E38002BF296 /* CbcSolverAnalyze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135E522C84E38002BF296 /* CbcSolverAnalyze.cpp */; };
+		757135EC22C84E53002BF296 /* CbcMipStartIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757135EA22C84E53002BF296 /* CbcMipStartIO.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		757135C522C662D6002BF296 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		754E5CB422C5BF8500A29A5F /* libcbcUpdate.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcbcUpdate.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -378,10 +403,38 @@
 		7571352322C61676002BF296 /* osi-glpk.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "osi-glpk.pc"; sourceTree = "<group>"; };
 		7571352422C61676002BF296 /* osi-unittests.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "osi-unittests.pc"; sourceTree = "<group>"; };
 		7571352522C61676002BF296 /* osi.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = osi.pc; sourceTree = "<group>"; };
+		757135C722C662D6002BF296 /* testCbc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCbc; sourceTree = BUILT_PRODUCTS_DIR; };
+		757135C922C662D6002BF296 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		757135CE22C84D5C002BF296 /* Cbc_ampl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cbc_ampl.h; path = ../../../TestCbc/Cbc/Cbc/src/Cbc_ampl.h; sourceTree = "<group>"; };
+		757135CF22C84D5C002BF296 /* Cbc_C_Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cbc_C_Interface.h; path = ../../../TestCbc/Cbc/Cbc/src/Cbc_C_Interface.h; sourceTree = "<group>"; };
+		757135D022C84D5C002BF296 /* Cbc_C_Interface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cbc_C_Interface.cpp; path = ../../../TestCbc/Cbc/Cbc/src/Cbc_C_Interface.cpp; sourceTree = "<group>"; };
+		757135D122C84D5C002BF296 /* Cbc_ampl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cbc_ampl.cpp; path = ../../../TestCbc/Cbc/Cbc/src/Cbc_ampl.cpp; sourceTree = "<group>"; };
+		757135D422C84D85002BF296 /* CbcCbcParam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CbcCbcParam.cpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcCbcParam.cpp; sourceTree = "<group>"; };
+		757135D622C84DA5002BF296 /* CbcLinked.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CbcLinked.cpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcLinked.cpp; sourceTree = "<group>"; };
+		757135D722C84DA5002BF296 /* CbcLinked.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CbcLinked.hpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcLinked.hpp; sourceTree = "<group>"; };
+		757135D822C84DA5002BF296 /* CbcLinkedUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CbcLinkedUtils.cpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcLinkedUtils.cpp; sourceTree = "<group>"; };
+		757135DB22C84DC6002BF296 /* CbcSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CbcSolver.cpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcSolver.cpp; sourceTree = "<group>"; };
+		757135DD22C84E02002BF296 /* CbcSolverHeuristics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CbcSolverHeuristics.cpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcSolverHeuristics.cpp; sourceTree = "<group>"; };
+		757135DE22C84E02002BF296 /* CbcSolverHeuristics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CbcSolverHeuristics.hpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcSolverHeuristics.hpp; sourceTree = "<group>"; };
+		757135E022C84E0C002BF296 /* CbcSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CbcSolver.hpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcSolver.hpp; sourceTree = "<group>"; };
+		757135E222C84E1D002BF296 /* unitTestClp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = unitTestClp.cpp; path = ../../../TestCbc/Cbc/Cbc/src/unitTestClp.cpp; sourceTree = "<group>"; };
+		757135E422C84E38002BF296 /* CbcSolverExpandKnapsack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CbcSolverExpandKnapsack.cpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcSolverExpandKnapsack.cpp; sourceTree = "<group>"; };
+		757135E522C84E38002BF296 /* CbcSolverAnalyze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CbcSolverAnalyze.cpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcSolverAnalyze.cpp; sourceTree = "<group>"; };
+		757135E622C84E38002BF296 /* CbcSolverExpandKnapsack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CbcSolverExpandKnapsack.hpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcSolverExpandKnapsack.hpp; sourceTree = "<group>"; };
+		757135E722C84E38002BF296 /* CbcSolverAnalyze.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CbcSolverAnalyze.hpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcSolverAnalyze.hpp; sourceTree = "<group>"; };
+		757135EA22C84E53002BF296 /* CbcMipStartIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CbcMipStartIO.cpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcMipStartIO.cpp; sourceTree = "<group>"; };
+		757135EB22C84E53002BF296 /* CbcMipStartIO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CbcMipStartIO.hpp; path = ../../../TestCbc/Cbc/Cbc/src/CbcMipStartIO.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		754E5CB222C5BF8500A29A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757135C422C662D6002BF296 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				754E5CB622C5BF8500A29A5F /* cbcUpdate */,
+				757135C822C662D6002BF296 /* testCbc */,
 				754E5CB522C5BF8500A29A5F /* Products */,
 				757134CE22C61676002BF296 /* Frameworks */,
 			);
@@ -404,6 +458,7 @@
 			isa = PBXGroup;
 			children = (
 				754E5CB422C5BF8500A29A5F /* libcbcUpdate.dylib */,
+				757135C722C662D6002BF296 /* testCbc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -665,6 +720,33 @@
 			path = pkgconfig;
 			sourceTree = "<group>";
 		};
+		757135C822C662D6002BF296 /* testCbc */ = {
+			isa = PBXGroup;
+			children = (
+				757135D122C84D5C002BF296 /* Cbc_ampl.cpp */,
+				757135D422C84D85002BF296 /* CbcCbcParam.cpp */,
+				757135D622C84DA5002BF296 /* CbcLinked.cpp */,
+				757135D722C84DA5002BF296 /* CbcLinked.hpp */,
+				757135D822C84DA5002BF296 /* CbcLinkedUtils.cpp */,
+				757135EA22C84E53002BF296 /* CbcMipStartIO.cpp */,
+				757135EB22C84E53002BF296 /* CbcMipStartIO.hpp */,
+				757135DD22C84E02002BF296 /* CbcSolverHeuristics.cpp */,
+				757135E522C84E38002BF296 /* CbcSolverAnalyze.cpp */,
+				757135E722C84E38002BF296 /* CbcSolverAnalyze.hpp */,
+				757135E422C84E38002BF296 /* CbcSolverExpandKnapsack.cpp */,
+				757135E622C84E38002BF296 /* CbcSolverExpandKnapsack.hpp */,
+				757135E022C84E0C002BF296 /* CbcSolver.hpp */,
+				757135DE22C84E02002BF296 /* CbcSolverHeuristics.hpp */,
+				757135E222C84E1D002BF296 /* unitTestClp.cpp */,
+				757135CE22C84D5C002BF296 /* Cbc_ampl.h */,
+				757135D022C84D5C002BF296 /* Cbc_C_Interface.cpp */,
+				757135DB22C84DC6002BF296 /* CbcSolver.cpp */,
+				757135CF22C84D5C002BF296 /* Cbc_C_Interface.h */,
+				757135C922C662D6002BF296 /* main.cpp */,
+			);
+			path = testCbc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -713,6 +795,7 @@
 				754E5DEE22C5E6E600A29A5F /* CbcCompareDepth.hpp in Headers */,
 				754E5DB922C5E6E600A29A5F /* CbcHeuristicDiveLineSearch.hpp in Headers */,
 				754E5E1B22C5E6E600A29A5F /* CbcDummyBranchingObject.hpp in Headers */,
+				757135E122C84E0C002BF296 /* CbcSolver.hpp in Headers */,
 				754E5E0522C5E6E600A29A5F /* CbcCompareObjective.hpp in Headers */,
 				754E5D9F22C5E6E600A29A5F /* CbcBranchDefaultDecision.hpp in Headers */,
 				754E5E1122C5E6E600A29A5F /* CbcHeuristicFPump.hpp in Headers */,
@@ -771,6 +854,23 @@
 			productReference = 754E5CB422C5BF8500A29A5F /* libcbcUpdate.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		757135C622C662D6002BF296 /* testCbc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 757135CB22C662D6002BF296 /* Build configuration list for PBXNativeTarget "testCbc" */;
+			buildPhases = (
+				757135C322C662D6002BF296 /* Sources */,
+				757135C422C662D6002BF296 /* Frameworks */,
+				757135C522C662D6002BF296 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testCbc;
+			productName = testCbc;
+			productReference = 757135C722C662D6002BF296 /* testCbc */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -781,6 +881,9 @@
 				ORGANIZATIONNAME = "王光磊";
 				TargetAttributes = {
 					754E5CB322C5BF8500A29A5F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					757135C622C662D6002BF296 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -798,6 +901,7 @@
 			projectRoot = "";
 			targets = (
 				754E5CB322C5BF8500A29A5F /* cbcUpdate */,
+				757135C622C662D6002BF296 /* testCbc */,
 			);
 		};
 /* End PBXProject section */
@@ -872,6 +976,25 @@
 				754E5DB022C5E6E600A29A5F /* CbcBranchingObject.cpp in Sources */,
 				754E5DAF22C5E6E600A29A5F /* CbcThread.cpp in Sources */,
 				754E5DE422C5E6E600A29A5F /* CbcHeuristicLocal.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757135C322C662D6002BF296 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757135D222C84D5C002BF296 /* Cbc_C_Interface.cpp in Sources */,
+				757135E822C84E38002BF296 /* CbcSolverExpandKnapsack.cpp in Sources */,
+				757135D922C84DA5002BF296 /* CbcLinked.cpp in Sources */,
+				757135DC22C84DC6002BF296 /* CbcSolver.cpp in Sources */,
+				757135E322C84E1D002BF296 /* unitTestClp.cpp in Sources */,
+				757135E922C84E38002BF296 /* CbcSolverAnalyze.cpp in Sources */,
+				757135EC22C84E53002BF296 /* CbcMipStartIO.cpp in Sources */,
+				757135D522C84D85002BF296 /* CbcCbcParam.cpp in Sources */,
+				757135DA22C84DA5002BF296 /* CbcLinkedUtils.cpp in Sources */,
+				757135D322C84D5C002BF296 /* Cbc_ampl.cpp in Sources */,
+				757135DF22C84E02002BF296 /* CbcSolverHeuristics.cpp in Sources */,
+				757135CA22C662D6002BF296 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,6 +1166,52 @@
 			};
 			name = Release;
 		};
+		757135CC22C662D6002BF296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = "SAMPLEDIR=\\\"/Users/guanglei.wgl/TestCbc/build/Data/Sample\\\"";
+				HEADER_SEARCH_PATHS = (
+					/Users/guanglei.wgl/cbcUpdate/cbcUpdate/,
+					/Users/guanglei.wgl/TestCbc/build/include/coin,
+				);
+				OTHER_LDFLAGS = (
+					"/Users/guanglei.wgl/Library/Developer/Xcode/DerivedData/cbcUpdate-ccaxigjxolcrikercbkhwgyytowy/Build/Products/Debug/libcbcUpdate.dylib",
+					/Users/guanglei.wgl/TestCbc/build/lib/libCgl.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libClp.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libCoinUtils.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsi.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsiCbc.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libClpSolver.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsiClp.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		757135CD22C662D6002BF296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = "SAMPLEDIR=\\\"/Users/guanglei.wgl/TestCbc/build/Data/Sample\\\"";
+				HEADER_SEARCH_PATHS = (
+					/Users/guanglei.wgl/cbcUpdate/cbcUpdate/,
+					/Users/guanglei.wgl/TestCbc/build/include/coin,
+				);
+				OTHER_LDFLAGS = (
+					"/Users/guanglei.wgl/Library/Developer/Xcode/DerivedData/cbcUpdate-ccaxigjxolcrikercbkhwgyytowy/Build/Products/Debug/libcbcUpdate.dylib",
+					/Users/guanglei.wgl/TestCbc/build/lib/libCgl.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libClp.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libCoinUtils.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsi.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsiCbc.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libClpSolver.dylib,
+					/Users/guanglei.wgl/TestCbc/build/lib/libOsiClp.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1060,6 +1229,15 @@
 			buildConfigurations = (
 				754E5CC022C5BF8500A29A5F /* Debug */,
 				754E5CC122C5BF8500A29A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		757135CB22C662D6002BF296 /* Build configuration list for PBXNativeTarget "testCbc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757135CC22C662D6002BF296 /* Debug */,
+				757135CD22C662D6002BF296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -47,6 +47,9 @@ int main (int argc, const char *argv[])
     printf("%d errors reading MPS file\n", numMpsReadErrors);
     return numMpsReadErrors;
   }
+  
+  printf("The solver has %g variables and %g constraints",  solver1.getNumCols(), solver1.getNumRows());
+
   double time1 = CoinCpuTime();
   
   /* Options are:
@@ -94,6 +97,8 @@ int main (int argc, const char *argv[])
     solver2->resolve();
   }
   CbcModel model(*solver2);
+  printf("The model has %g variables and %g constraints",  model.getNumCols(), model.getNumRows());
+  
   // If time is given then stop after that number of minutes
   if (minutes>=0.0) {
     std::cout<<"Stopping after "<<minutes<<" minutes"<<std::endl;

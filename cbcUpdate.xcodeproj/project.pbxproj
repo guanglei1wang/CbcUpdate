@@ -1164,20 +1164,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREPROCESSOR_DEFINITIONS = "SAMPLEDIR=\\\"/Users/guanglei.wgl/TestCbc/build/Data/Sample\\\"";
+				GCC_PREPROCESSOR_DEFINITIONS = "SAMPLEDIR=\\\"/Users/jing/TestCbc/build/Data/Sample\\\"";
 				HEADER_SEARCH_PATHS = (
-					/Users/guanglei.wgl/cbcUpdate/cbcUpdate/,
-					/Users/guanglei.wgl/TestCbc/build/include/coin,
+					/Users/jing/alibaba/cbcUpdate/cbcUpdate/,
+					/Users/jing/TestCbc/build/include/coin,
 				);
 				OTHER_LDFLAGS = (
-					"/Users/guanglei.wgl/Library/Developer/Xcode/DerivedData/cbcUpdate-ccaxigjxolcrikercbkhwgyytowy/Build/Products/Debug/libcbcUpdate.dylib",
-					/Users/guanglei.wgl/TestCbc/build/lib/libCgl.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libClp.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libCoinUtils.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsi.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsiCbc.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libClpSolver.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsiClp.dylib,
+					"/Users/jing/Library/Developer/Xcode/DerivedData/cbcUpdate-djyvfdqdisetuwfnlfoylgwgygos/Build/Products/Debug/libcbcUpdate.dylib\n",
+					/Users/jing/TestCbc/build/lib/libCgl.dylib,
+					/Users/jing/TestCbc/build/lib/libClp.dylib,
+					/Users/jing/TestCbc/build/lib/libCoinUtils.dylib,
+					/Users/jing/TestCbc/build/lib/libOsi.dylib,
+					/Users/jing/TestCbc/build/lib/libOsiCbc.dylib,
+					/Users/jing/TestCbc/build/lib/libClpSolver.dylib,
+					/Users/jing/TestCbc/build/lib/libOsiClp.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1187,20 +1187,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREPROCESSOR_DEFINITIONS = "SAMPLEDIR=\\\"/Users/guanglei.wgl/TestCbc/build/Data/Sample\\\"";
+				GCC_PREPROCESSOR_DEFINITIONS = "SAMPLEDIR=\\\"/Users/jing/TestCbc/build/Data/Sample\\\"";
 				HEADER_SEARCH_PATHS = (
-					/Users/guanglei.wgl/cbcUpdate/cbcUpdate/,
-					/Users/guanglei.wgl/TestCbc/build/include/coin,
+					/Users/jing/alibaba/cbcUpdate/cbcUpdate/,
+					/Users/jing/TestCbc/build/include/coin,
 				);
 				OTHER_LDFLAGS = (
-					"/Users/guanglei.wgl/Library/Developer/Xcode/DerivedData/cbcUpdate-ccaxigjxolcrikercbkhwgyytowy/Build/Products/Debug/libcbcUpdate.dylib",
-					/Users/guanglei.wgl/TestCbc/build/lib/libCgl.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libClp.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libCoinUtils.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsi.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsiCbc.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libClpSolver.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsiClp.dylib,
+					"/Users/jing/Library/Developer/Xcode/DerivedData/cbcUpdate-djyvfdqdisetuwfnlfoylgwgygos/Build/Products/Debug/libcbcUpdate.dylib\n",
+					/Users/jing/TestCbc/build/lib/libCgl.dylib,
+					/Users/jing/TestCbc/build/lib/libClp.dylib,
+					/Users/jing/TestCbc/build/lib/libCoinUtils.dylib,
+					/Users/jing/TestCbc/build/lib/libOsi.dylib,
+					/Users/jing/TestCbc/build/lib/libOsiCbc.dylib,
+					/Users/jing/TestCbc/build/lib/libClpSolver.dylib,
+					/Users/jing/TestCbc/build/lib/libOsiClp.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

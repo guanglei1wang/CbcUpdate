@@ -998,18 +998,15 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					COIN_HAS_CLP,
-					Xcode,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = COIN_HAS_CLP;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = /Users/guanglei.wgl/TestCbc/build/include/coin/;
+				HEADER_SEARCH_PATHS = /Users/jing/TestCbc/build/include/coin/;
 				OTHER_LDFLAGS = (
-					/Users/guanglei.wgl/TestCbc/build/lib/libCgl.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsiClp.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libClp.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libCoinUtils.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsi.dylib,
+					/Users/jing/TestCbc/build/lib/libCgl.dylib,
+					/Users/jing/TestCbc/build/lib/libOsiClp.dylib,
+					/Users/jing/TestCbc/build/lib/libClp.dylib,
+					/Users/jing/TestCbc/build/lib/libCoinUtils.dylib,
+					/Users/jing/TestCbc/build/lib/libOsi.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1025,18 +1022,15 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					COIN_HAS_CLP,
-					Xcode,
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = COIN_HAS_CLP;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				HEADER_SEARCH_PATHS = /Users/guanglei.wgl/TestCbc/build/include/coin/;
+				HEADER_SEARCH_PATHS = /Users/jing/TestCbc/build/include/coin/;
 				OTHER_LDFLAGS = (
-					/Users/guanglei.wgl/TestCbc/build/lib/libCgl.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsiClp.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libClp.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libCoinUtils.dylib,
-					/Users/guanglei.wgl/TestCbc/build/lib/libOsi.dylib,
+					/Users/jing/TestCbc/build/lib/libCgl.dylib,
+					/Users/jing/TestCbc/build/lib/libOsiClp.dylib,
+					/Users/jing/TestCbc/build/lib/libClp.dylib,
+					/Users/jing/TestCbc/build/lib/libCoinUtils.dylib,
+					/Users/jing/TestCbc/build/lib/libOsi.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
